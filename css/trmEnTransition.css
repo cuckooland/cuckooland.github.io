@@ -1,0 +1,294 @@
+#section
+{
+    height: 768px;
+	min-width: 1024px;
+    width: 50em;
+}
+
+#TrmAppli
+{
+    font-size: 0.86em;
+}
+
+select {
+    text-align: left;
+    margin:0.1em 0.3em 0.1em 0.3em;
+    font-size: 0.9em;
+}
+
+input[type=text] {
+    text-align: right;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    width: 4em;
+}
+
+input[type=button] {
+    font-size: 0.875em;
+    padding: 0px 5px 0px 5px
+}
+
+input[disabled=disabled] {
+    color: #aaaaaa;
+}
+
+.InProgress {
+    font-style: italic;
+    font-size: 0.5em;
+    color: #ff5555;
+}
+
+.labelledForm {
+    display: inline-block;
+    margin: 0em 0.5em 0em 0em;
+}
+
+.ParamSection {
+    padding-left: 0.6em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    margin-top: 0.1em;
+    margin-left: 0.8em;
+}
+
+.row {
+    margin:0.2em;
+}
+
+.ParamPart {
+    width: 33%;
+    float: left;
+}
+
+.CommentPart {
+    width: 65%;
+    float: left;
+    height:11.5em;
+    padding: 5px 5px 5px 10px;
+}
+
+.CommentPart p {
+    margin-top:0.25em;
+    margin-bottom:0.25em;
+}
+
+.CommentPart ul
+{
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    padding-left: 1.5em; /* pour éviter la superposition du contenu */
+}
+
+.PointComment {
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    padding: 4px 8px 2px 8px;
+}
+
+label {
+    color: darkslateblue;
+}
+
+.wsTitle {
+    margin-left: 0.5em;
+    font-style: italic;
+    color: #4a866a;
+}
+
+.chart {
+    display: inline-block;
+    width: 49%;
+}
+
+#ChartsPart {
+    background-color: #dedede;
+	border: 1px solid #aaaaaa;
+    border-radius: 5px;
+}
+
+#TrmAppli
+{
+	vertical-align: top;
+    padding: 5px;
+    background-color: #c9c9c9;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px #1c1a19;
+}
+
+#ParamsAndComments {
+    border: 1px solid #ccc;
+}
+
+#ParamsCommentsAndTabs {
+    border-top: none;
+    height:18em;
+}
+
+/* Style the list */
+ul.tabsBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #dedede;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tabsBar li {
+    float: left;
+}
+
+/* Style the links inside the list items */
+ul.tabsBar li span {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 0.8em 0.8em;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Change background color of links on hover */
+ul.tabsBar li span:hover,
+ul.tabsBar li span.focused {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+ul.tabsBar li span:focus, .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+}
+
+.Comment {
+    display: none;
+}
+
+.c3-line {
+  stroke-width: 1.5px;
+}
+
+svg {
+    font-family: sans-serif;
+    font-size: 10px;    
+}
+
+span.increaseDate,
+span.decreaseDate {
+    font-family: monospace;
+    background-color: #ddd;
+    color: #555;
+	border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+span.decreaseDate {
+    margin-right: 0.2em;
+}
+
+span.increaseDate {
+    margin-left: 0.2em;
+}
+
+span.increaseDate:hover,
+span.decreaseDate:hover {
+    background-color: #bbb;
+}
+
+#AccountsChart .c3-line-scaled-dividend, #DividendChart .c3-line-scaled-average, #MonetarySupplyChart .c3-line-cruising-monetary-supply {
+  stroke-width: .5px;
+}
+
+span.account, 
+span.average, 
+span.stableAverage,
+span.dividend,
+span.stableDividend,
+span.headcount,
+span.monetarySupply,
+span.stableMonetarySupply {
+    background-color: #dedede;
+    padding: 0px 2px 0px 2px;
+	border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+span.account:hover, 
+span.average:hover, 
+span.stableAverage:hover,
+span.dividend:hover,
+span.stableDividend:hover,
+span.headcount:hover,
+span.monetarySupply:hover,
+span.stableMonetarySupply:hover {
+    background-color: #c9c9c9;
+    transition: 0.3s;
+}
+
+.current:not(.nolink), .previous, .previous2 {
+    cursor: pointer;
+}
+
+.configLink {
+    color: darkslateblue;
+    cursor: pointer;
+}
+
+span.ParamLink,
+span.accountName,
+span.transaction,
+span.workshopsTabLink,
+span.growth,
+span.growthTabLink,
+span.dividendTabLink,
+span.referenceTabLink,
+span.DisplayTabLink,
+span.accountsTabLink,
+span.demographyTabLink,
+span.transactionsTabLink {
+    padding: 0px 2px 0px 2px;
+    cursor: pointer;
+	border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.prodFactor {
+    font-style: italic;
+}
+
+.xLocLine,
+.yLocLine {
+    stroke-width: 0.2;
+    stroke: #000;
+}
+
+.locLine {
+    fill: none;
+    stroke: red;
+    stroke-width: 1.5px;
+}
+  
+.locCircle {
+    fill: red;
+}
+
+.legend-item, 
+.overlay  {
+    cursor: pointer;
+}
+
+.serieGroup>circle  {
+    fill: #dedede;
+}

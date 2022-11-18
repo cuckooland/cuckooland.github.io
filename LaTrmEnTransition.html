@@ -1,0 +1,1330 @@
+<!doctype html>
+<html lang="fr-FR">
+<head>
+    <meta charset="utf-8">
+    <title>La TRM en Transition — In Cloud Cuckoo Land</title>
+    <meta name="description" content="La TRM en Couleur se voulait une introduction à la Théorie Relative de la Monnaie. La TRM en Transition garde son souci d'accessibilité au plus grand nombre, tout en abordant des questions plus avancées." />
+    <meta name="keywords" content="Monnaie Libre, Revenu de base, Dividende Universel, Théorie Relative de la Monnaie, TRM, Simulation" />
+
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="La TRM en Transition" />
+    <meta property="og:description" content="La TRM en Couleur se voulait une introduction à la Théorie Relative de la Monnaie. La TRM en Transition garde son souci d'accessibilité au plus grand nombre, tout en abordant des questions plus avancées." />
+    <meta property="og:url" content="http://cuckooland.free.fr/LaTrmEnTransition.html" />
+    <meta property="og:site_name" content="In Cloud Cuckoo Land" />
+    <meta property="og:image" content="http://cuckooland.free.fr/og-images/TrmEnTransition.png" />
+    <meta property="og:image:secure_url" content="http://cuckooland.free.fr/og-images/TrmEnTransition.png" />
+    <meta property="og:image:width" content="1017" />
+    <meta property="og:image:height" content="867" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="La TRM en Couleur se voulait une introduction à la Théorie Relative de la Monnaie. La TRM en Transition garde son souci d'accessibilité au plus grand nombre, tout en abordant des questions plus avancées." />
+    <meta name="twitter:title" content="La TRM en Transition" />
+    <meta name="twitter:image" content="http://cuckooland.free.fr/og-images/TrmEnTransition.png" />
+    
+    <link rel="icon" href="images/favicon.ico" />
+    
+    <!-- stylesheets sources -->
+    <link rel="stylesheet" type="text/css" href="css/index-style.css" />
+    <link href="css/trmEnTransition.css" media="screen" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <script type="text/javascript">function contact(t,c){document.write('<a class="contact" href=mailto:'+t+"@"+c+">Contact</a>")}</script>
+
+    <div id="bloc_page">
+        <div id="header">
+            <div id="headerTitle">
+                <a href="index.html" id="cuckoolandImage"><img src="images/CloudCuckooLand.png" alt="In Cloud Cuckoo Land" /></a>
+            </div>
+            
+            <div id="nav">
+                <ul>
+                    <li><a href="reveal/LaMonnaieLibreEnUnCinquiemeDeTemps.html">La monnaie libre en un cinquieme de temps</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="LeVirusG1.html">Le virus Ğ1</a></li>
+                    <li><script type="text/javascript">contact("cuckooland","free.fr");</script></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="section">
+			<h1>La TRM en Transition <span class="pub-date">05/2019</span>
+			</h1>
+            
+            <!-- Intro -->
+            <div class="introduction">
+                <p><a href="LaTrmEnCouleur.html">La TRM en Couleur</a> a été publiée il y a quelques années et se voulait une introduction à la <a href="http://www.creationmonetaire.info/2012/11/theorie-relative-de-la-monnaie-2-718.html">Théorie Relative de la Monnaie</a> de Stéphane Laborde.</p>
+
+                <p><a href="LaTrmEnTransition.html">La TRM en Transition</a> prolonge cette introduction et tente de garder son souci d'accessibilité au plus grand nombre, tout en abordant des questions plus avancées.</p>
+                
+            </div>
+
+            <div id="TrmAppli">
+                <div id="ParamsCommentsAndTabs">
+                    <ul class="tabsBar">
+                        <li><span class="tablinks" id="WorkshopsTab" tab-content-id="Workshops">Ateliers</span></li>
+                        <li><span class="tablinks" id="GrowingRateTab" tab-content-id="GrowingRate">Taux d'expansion</span></li>
+                        <li><span class="tablinks" id="UniversalDividendTab" tab-content-id="UniversalDividend">Dividende Universel</span></li>
+                        <li><span class="tablinks" id="ReferenceTab" tab-content-id="Reference">Référentiel</span></li>
+                        <li><span class="tablinks" id="DisplayTab" tab-content-id="Display">Affichage</span></li>
+                        <li><span class="tablinks" id="AccountsTab" tab-content-id="Accounts">Comptes</span></li>
+                        <li><span class="tablinks" id="DemographyTab" tab-content-id="Demography">Démographie</span></li>
+                        <li><span class="tablinks" id="TransactionsTab" tab-content-id="Transactions">Transactions</span></li>
+                    </ul>
+                    <div class="ParamPart">
+                        <!-- Workshops Tab Parameters -->
+                        <div id="Workshops" class="tabcontent">
+                            <div class="row">
+                                <div class="labelledForm">
+                                    <label for="ConfigSelector1">Thème 1</label><span class="wsTitle">Un seul co-créateur</span><select id="ConfigSelector1" name="ConfigSelector1"></select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="labelledForm">
+                                    <label for="ConfigSelector2">Thème 2</label><span class="wsTitle">Sur l'ordre d'entrée</span><select id="ConfigSelector2" name="ConfigSelector2"></select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="labelledForm">
+                                    <label for="ConfigSelector3">Thème 3</label><span class="wsTitle">Prêt et calcul en DU</span><select id="ConfigSelector3" name="ConfigSelector3"></select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="labelledForm">
+                                    <label for="ConfigSelector4">Thème 4</label><span class="wsTitle">RdB vs DU</span><select id="ConfigSelector4" name="ConfigSelector4"></select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="labelledForm">
+                                    <label for="ConfigSelector5">Thème 5</label><span class="wsTitle">Fonte et héritage</span><select id="ConfigSelector5" name="ConfigSelector5"></select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Money Tab Parameters -->
+                        <div id="GrowingRate" class="tabcontent">
+                            <div class="row">
+                                <div class="labelledForm">
+                                    <label for="LifeExpectancy">Espérance de vie (en année)</label>
+                                    <input id="LifeExpectancy" type="text" name="LifeExpectancy"
+                                            title="Espérance de vie des individus"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="labelledForm">
+                                    <label for="CalculateGrowth">Croissance "c" déduite de l'espérence de vie</label>
+                                    <input id="CalculateGrowth" type="checkbox" name="CalculateGrowth" value="1" checked="checked" title="Calcule la croissance (c) à partir de l'espérance de vie (ev) : c = (ev/2)^(1/(ev/2))&nbsp;*&nbsp;100">
+                                </div>
+                            </div>
+                            <div class="ParamSection">
+                                <div class="row">
+                                    <div class="labelledForm">
+                                        <label class="leftComp"><input class="rythm" type="radio" name="rythm" value="byYear" checked> Croissance annuelle (en %)</label>
+                                        <input id="AnnualGrowth" type="text" name="AnnualGrowth"
+                                                title="Croissance annuelle de la masse monétaire moyenne"/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="labelledForm">
+                                        <label class="leftComp"><input class="rythm" type="radio" name="rythm" value="byMonth"> Croissance mensuelle (en %)</label>
+                                        <input id="MonthlyGrowth" type="text" name="MonthlyGrowth"
+                                                title="Croissance mensuelle de la masse monétaire moyenne"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Universal Divividend Tab Parameters -->
+                        <div id="UniversalDividend" class="tabcontent">
+                            <div class="row">
+                                <div class="labelledForm">
+                                    <label for="UdFormulaSelector">Formule du dividende</label><select id="UdFormulaSelector" name="UdFormulaSelector"></select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label>Dividende de départ "DU0" (en unités monétaires)</label>
+                            </div>
+                            <div class="ParamSection">
+                                <div class="row">
+                                    <div class="labelledForm">
+                                        <input id="AnnualDividendStart" type="text" name="AnnualDividendStart"/>
+                                        <label class="leftComp"><input class="ud0Rythm" type="radio" name="ud0Rythm" value="ud0ByYear" checked>Taux et émission annuels</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="labelledForm">
+                                        <input id="YearMonthDividendStart" type="text" name="YearMonthDividendStart"/>
+                                        <label class="leftComp"><input class="ud0Rythm" type="radio" name="ud0Rythm" value="ud0ByYearMonth" checked>Taux annuel, émission mensuel</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="labelledForm">
+                                        <input id="MonthlyDividendStart" type="text" name="MonthlyDividendStart"/>
+                                        <label class="leftComp"><input class="ud0Rythm" type="radio" name="ud0Rythm" value="ud0ByMonth" checked>Taux et émission mensuels</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Reference Tab Parameters -->
+                        <div id="Reference" class="tabcontent">
+                            <div class="row">
+                                <div class="labelledForm">
+                                    <label for="ReferenceFrameSelector">Référentiel</label><select id="ReferenceFrameSelector" name="ReferenceFrameSelector"></select>
+                                </div>
+                                <div class="ParamSection">
+                                    <div class="labelledForm">
+                                        <label for="LogScale">Echelle logarithmique</label>
+                                        <input id="LogScale" type="checkbox" name="LogScale" value="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Display Tab Parameters -->
+                        <div id="Display" class="tabcontent">
+                            <div class="row">
+                                <label>Période affichée (en année)</label>
+                            </div>
+                            <div class="ParamSection">
+                                <div class="row">
+                                    <div class="labelledForm">
+                                        <label for="TimeLowerBound">Borne min</label>
+                                        <input id="TimeLowerBound" type="text" name="TimeLowerBound"
+                                                title="Borne inférieure de l'axe des X (en année)"/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="labelledForm">
+                                        <label for="TimeUpperBound">Borne max</label>
+                                        <input id="TimeUpperBound" type="text" name="TimeUpperBound"
+                                                title="Borne supérieure de l'axe des X (en année)"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="labelledForm">
+                                <label for="StepCurves">Courbes en escalier</label>
+                                <input id="StepCurves" type="checkbox" name="StepCurves" value="1">
+                            </div>
+                        </div>
+                        
+                        <!-- Accounts Tab Parameters -->
+                        <div id="Accounts" class="tabcontent">
+                            <div class="row">
+                                <select id="AccountSelector" name="AccountSelector"></select>
+                                <input id="AddAccount" type="button" value="Ajouter un compte"/>
+                            </div>
+                            <div class="ParamSection">
+                                <div class="row">
+                                    <div class="labelledForm">
+                                        <label for="AccountBirth">Année d'entrée</label>
+                                        <input id="AccountBirth" type="text" name="AccountBirth" 
+                                                title="Indique l'année de naissance du compte"/>
+                                        <label for="AccountDuration">Durée</label>
+                                        <input id="AccountDuration" type="text" name="AccountDuration" 
+                                                title="Indique la longévité du compte"/>
+                                    </div>
+                                    <div class="row">
+                                        <div class="labelledForm">
+                                            <label for="TypeSelector">Type</label>
+                                            <select id="TypeSelector" name="TypeSelector"></select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="labelledForm">
+                                            <label for="StartingPercentage">Montant à la naissance en %(M/N)</label>
+                                            <input id="StartingPercentage" type="text" name="StartingPercentage"
+                                                    title="Indique le montant présent sur le compte au départ"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <input id="DeleteAccount" type="button" value="Supprimer"/>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Demography Tab Parameters -->
+                        <div id="Demography" class="tabcontent">
+                            <div class="row">
+                                <label for="DemographySelector">Profil</label><select id="DemographySelector" name="DemographySelector"></select>
+                            </div>
+                            <div class="ParamSection" id="DemographyParamSection">
+                                <div class="row">
+                                    <div class="labelledForm">
+                                        <label for="MaxDemography">Nombre d'individus au sommet</label>
+                                        <input id="MaxDemography" type="text" name="MaxDemography"
+                                                title="Ordre de grandeur de la démographie maximum"/>
+                                    </div>
+                                    <div class="labelledForm">
+                                        <label for="xMinDemography">Année de début</label>
+                                        <input id="xMinDemography" type="text" name="xMinDemography"/>
+                                    </div>
+                                    <div class="labelledForm">
+                                        <label for="xMaxDemography">Année de fin</label>
+                                        <input id="xMaxDemography" type="text" name="xMaxDemography"/>
+                                    </div>
+                                    <div class="labelledForm">
+                                        <label for="xMpvDemography">Année au sommet</label>
+                                        <input id="xMpvDemography" type="text" name="xMpvDemography"/>
+                                    </div>
+                                    <div class="labelledForm">
+                                        <label for="plateauDemography">Durée en année</label>
+                                        <input id="plateauDemography" type="text" name="plateauDemography"/>
+                                    </div>
+                                    <div class="labelledForm">
+                                        <label for="xScaleDemography">Paramètre d'échelle</label>
+                                        <input id="xScaleDemography" type="text" name="xScaleDemography"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Transactions Tab Parameters -->
+                        <div id="Transactions" class="tabcontent">
+                            <div class="row">
+                                <select id="TransactionSelector" name="TransactionSelector"></select>
+                                <input id="AddTransaction" type="button" value="Ajouter une transaction"/>
+                            </div>
+                            <div class="ParamSection">
+                                <div class="row">
+                                    <div class="labelledForm">
+                                        <label for="TransactionYear">En</label>
+                                        <input id="TransactionYear" type="text" name="TransactionYear" 
+                                                title="Indique l'année sur laquelle est appliquée cette transaction"/>
+                                        <label for="TransactionRep">faite</label>
+                                        <input id="TransactionRep" type="text" name="TransactionRep" 
+                                                title="Indique le nombre d'années suivantes où est appliquée cette transaction"/>
+                                        <label>fois</label>
+                                    </div>
+                                    <div class="row">
+                                        <label for="TransactionSrc">De</label>
+                                        <select id="TransactionSrc" name="TransactionSrc"></select>
+                                        <label for="TransactionDest">vers</label>
+                                        <select id="TransactionDest" name="TransactionDest"></select>
+                                    </div>
+                                    <div class="row">
+                                        <div class="labelledForm">
+                                            <label for="TransactionAmount">Montant</label>
+                                            <input id="TransactionAmount" type="text" name="TransactionAmount"
+                                                    title="Indique le montant du transfert"/>
+                                        </div>
+                                        <select id="TransactionRef" name="TransactionRef"></select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <input id="DeleteTransaction" type="button" value="Supprimer"/>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="CommentPart">
+                        <!-- Charts Comments -->
+                        <div class="Comment" id="averageComment">
+                            <div class="CurveComment">
+                                <p>Si la <span class="monetarySupply">masse monétaire</span> était répartie à parts égales, quel montant aurait chacun des <span class="headcount">individus</span>&nbsp;?</p>
+                                
+                                <p>Ce montant et ses évolutions au fil du temps peuvent être visualisés sur la courbe <span class="average label">M/N</span> (voir le diagramme en haut à gauche). Afin que cette courbe soit plus facile à suivre, la zone située entre elle et la droite "Montant = 0" est colorée.</p>
+                                
+                                <!-- 
+                                <p>En comparant <span class="average">cette courbe</span> avec celle des comptes, on peut par exemple répondre à la question "Si la monnaie était redistribuée de façon égale, tel compte subirait-il une baisse ou une hausse&nbsp;?" </p>
+                                -->
+                            </div>
+                            
+                            <div class="PointComment">
+                                <div class="RefComment MU">
+                                    <p><span class="average label">M/N</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="average current mu value nolink">0</span> <span class="muUnit">Unité monétaire</span></p>
+                                
+                                    <p>= la <span class="monetarySupply current mu">masse monétaire</span> divisée par <span class="headcount current">nombre d'individus</span> =&nbsp;<span class="monetarySupply current mu value">0</span>&nbsp;/&nbsp;<span class="headcount current value">0</span></p>
+                                </div>
+                                
+                                <div class="RefComment MU-log">
+                                    <p><span class="average label">M/N</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="average mu logValue nolink">0</span> <span class="muLogUnit">Unité monétaire (log)</span></p>
+                                
+                                    <p>= log népérien de la <span class="average current mu">moyenne</span> exprimée en <span class="muUnit">Unité Monétaire</span> divisé par log népérien de 10 =&nbsp;ln(<span class="average current mu value">0</span>)&nbsp;/&nbsp;ln(10)</p>
+                                </div>
+                                
+                                <div class="RefComment UD">
+                                    <p><span class="average label">M/N</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="average ud value nolink">0</span> <span class="duUnit">DU</span></p>
+                                
+                                    <p>= la <span class="average current mu">moyenne exprimé en <span class="muUnit">Unité Monétaire</span></span> divisée par le <span class="dividend current mu">dernier DU</span></p>
+                                    <p>= <span class="average current mu value">0</span>&nbsp;/&nbsp;<span class="dividend current mu value">0</span></p>
+                                </div>
+                                
+                                <div class="RefComment UD-log">
+                                    <p><span class="average label">M/N</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="average ud logValue nolink">0</span> <span class="duLogUnit">DU (log)</span></p>
+                                
+                                    <p>= log népérien de la <span class="average current ud">moyenne exprimée en <span class="duUnit">DU</span></span> divisé par log népérien de 10 =&nbsp;ln(<span class="average current ud value">0</span>)&nbsp;/&nbsp;ln(10)</p>
+                                </div>
+                                
+                                <div class="RefComment MN">
+                                    <p><span class="average label">M/N</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="average mn value nolink">0</span> <span class="mnUnit">% M/N</span></p>
+                                
+                                    <p>= 100 fois la <span class="average current mu">moyenne exprimée en <span class="muUnit">Unité Monétaire</span></span> divisée par <span class="average">M/N</span> =&nbsp;100&nbsp;*&nbsp;<span class="average current mu value">0</span>&nbsp;/&nbsp;<span class="average current mu value">0</span></p>
+                                </div>
+                                
+                                <div class="RefComment MN-log">
+                                    <p><span class="average label">M/N</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="average mn logValue nolink">0</span> <span class="mnLogUnit">% M/N (log)</span></p>
+                                
+                                    <p>= log népérien de la <span class="average current mn">moyenne exprimée en <span class="mnUnit">% M/N</span></span> divisée par log népérien de 10 =&nbsp;ln(<span class="average current mn value">0</span>)&nbsp;/&nbsp;ln(10)</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="Comment" id="stableAverageComment">
+                            <div class="CurveComment">
+                                <p>En <span class="StartingPercentage ParamLink">monnaie pleine</span>, DU(t+1)&nbsp;=&nbsp;c*(M/N)(t), mais aussi DU(t+1)&nbsp;=&nbsp;(1+c)*DU(t). Ainsi, en combinant ces deux formules, on a (M/N)(t)&nbsp;=&nbsp;(1+c)*DU(t)/c. Autrement dit, quelqu'un qui connaît le montant du <span class="dividend">DU</span> courant peut facilement en déduire la masse moyenne <span class="average">M/N</span> courante.</p>
+    
+                                <p>Dans le premier diagramme (en haut à gauche), la courbe <span class="stableAverage label">M/N pleine</span> représente cette valeur théorique (1+c)*<span class="dividend">DU</span>/c. Elle permet de voir dans quelle proportion, suivant la formule choisie pour calculer le DU (voir onglet <span class="dividendTabLink">Dividende Universel</span>), la moyenne <span class="average">M/N</span> tend vers cette <span class="stableAverage">valeur théorique</span>. <span class="prodFactor">Dans la configuration actuelle, <span class="growth ParamLink">c</span> est défini sur une base annuelle et l'émission du DU est <span class="UD0 ParamLink">mensualisée</span>. Un facteur 12 est donc à appliquer.</span></p>
+                            </div>
+
+                            <div class="PointComment">
+                                <div class="RefComment MU">
+                                    <p><span class="stableAverage label">DU/c</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="stableAverage current mu value nolink">0</span> <span class="muUnit">Unité monétaire</span></p>
+                                
+                                    <p>= (1&nbsp;+&nbsp;<span class="growth value ParamLink">0 %</span>)&nbsp;*&nbsp;<span class="dividend current mu value">0</span>&nbsp;/&nbsp;<span class="growth value ParamLink">0 %</span><span class="prodFactor">&nbsp;*&nbsp;12</span></p>
+                                </div>
+                                
+                                <div class="RefComment MU-log">
+                                    <p><span class="stableAverage label">DU/c</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="stableAverage mu logValue nolink">0</span> <span class="muLogUnit">Unité monétaire (log)</span></p>
+                                
+                                    <p>= log népérien de la <span class="stableAverage current mu">moyenne pleine exprimée en <span class="muUnit">Unité Monétaire</span></span> divisé par log népérien de 10 =&nbsp;ln(<span class="stableAverage current mu value">0</span>)&nbsp;/&nbsp;ln(10)</p>
+                                </div>
+                                
+                                <div class="RefComment UD">
+                                    <p><span class="stableAverage label">DU/c</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="stableAverage ud value nolink">0</span> <span class="duUnit">DU</span></p>
+                                
+                                    <p>= la <span class="stableAverage current mu">moyenne pleine exprimée en <span class="muUnit">Unité Monétaire</span></span> divisée par le <span class="dividend current mu">dernier DU</span> =&nbsp;<span class="stableAverage current mu value">0</span>&nbsp;/&nbsp;<span class="dividend current mu value">0</span></p>
+                                </div>
+                                
+                                <div class="RefComment UD-log">
+                                    <p><span class="stableAverage label">DU/c</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="stableAverage ud logValue nolink">0</span> <span class="duLogUnit">DU (log)</span></p>
+                                
+                                    <p>= log népérien de la <span class="stableAverage current ud">moyenne pleine exprimée en <span class="duUnit">DU</span></span> divisé par log népérien de 10 =&nbsp;ln(<span class="stableAverage current ud value">0</span>)&nbsp;/&nbsp;ln(10)</p>
+                                </div>
+                                
+                                <div class="RefComment MN">
+                                    <p><span class="stableAverage label">DU/c</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="stableAverage mn value nolink">0</span> <span class="mnUnit">% M/N</span></p>
+                                
+                                    <p>= 100 fois la <span class="stableAverage current mu">moyenne pleine exprimée en <span class="muUnit">Unité Monétaire</span></span> divisée par <span class="average current mu">M/N</span> =&nbsp;100&nbsp;*&nbsp;<span class="stableAverage current mu value">0</span>&nbsp;/&nbsp;<span class="average current mu value">0</span></p>
+                                </div>
+                                
+                                <div class="RefComment MN-log">
+                                    <p><span class="stableAverage label">DU/c</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="stableAverage mn logValue nolink">0</span> <span class="mnLogUnit">% M/N (log)</span></p>
+                                
+                                    <p>= log népérien de la <span class="stableAverage current mn value">moyenne pleine exprimée en <span class="mnUnit">% M/N</span></span> divisé par log népérien de 10 =&nbsp;ln(<span class="stableAverage current mn value">0</span>)&nbsp;/&nbsp;ln(10)</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="Comment" id="accountComment">
+                            <div class="CurveComment">
+                                <p>Dans ce premier diagramme (en haut à gauche), l'évolution au fil du temps d'un ou plusieurs comptes (voir l'onglet <span class="accountsTabLink">Comptes</span>) est représentée.</p>
+                                
+                                <p>Par défaut, un seul compte est affiché, intitulé "Compte 1" et correspond à un co-créateur de la monnaie, comme indiqué entre parenthèses dans la légende.</p>
+                                <p class="prodFactor AtMoneyBirth">
+                                    Dans la configuration actuelle, <span class="growth ParamLink">c</span> est défini sur une base annuelle et l'émission du DU est <span class="UD0 ParamLink">mensualisée</span>. DU0 doit donc être multiplié par 12. 
+                                </p>
+                            </div>
+                            
+                            <div class="PointComment">
+                                <div class="RefComment MU">
+                                    <p>
+                                        <span class="AmountComment CoCreator NonCreator CoCreators NoCreators AtMoneyBirth AtBirth WhenAlive">
+                                            <p><span class="account name">compte</span>, le <span class="dateValue">01-01-2001</span>, est âgé de <span class="accountAge">0</span> et vaut&nbsp;: <span class="account current mu value nolink">0</span> <span class="muUnit">Unité monétaire</span></p>
+                                        </span>
+                                        
+                                        <span class="AmountComment CoCreator NonCreator AfterDeath">
+                                            <p><span class="account name">compte</span>, le <span class="dateValue">01-01-2001</span>, âgé de <span class="accountAge">0</span>, n'est plus vivant&nbsp;; il vaut&nbsp;: <span class="account current mu value nolink">0</span> <span class="muUnit">Unité monétaire</span></p>
+                                        </span>
+                                    </p>
+                                    
+                                    <p>
+                                        <span class="AmountComment CoCreators NoCreators AtMoneyBirth">
+                                            = le montant à la naissance défini via un <span class="StartingPercentage ParamLink">pourcentage</span> de <span class="UD0 ParamLink">DU0</span>/<span class="growth ParamLink">c</span> (au lieu de <span class="average">M/N</span>, car démarrage de la monnaie)
+                                        </span>
+    
+                                        <span class="AmountComment CoCreators AtBirth">
+                                            = le montant à la naissance défini via un <span class="StartingPercentage ParamLink">pourcentage</span> de <span class="average">M/N</span> (après émission du <span class="dividend current mu">DU</span>)
+                                        </span>
+    
+                                        <span class="AmountComment NoCreators AtBirth">
+                                            = le montant à la naissance défini via un <span class="StartingPercentage ParamLink">pourcentage</span> de <span class="average">M/N</span>
+                                        </span>
+    
+                                        <span class="AmountComment CoCreator WhenAlive">
+                                            = le <span class="account previous mu">montant au temps précédent</span> auquel s'ajoute, en tant que co-créateur de la monnaie, le <span class="dividend current mu">DU</span>
+                                        </span>
+    
+                                        <span class="AmountComment NonCreator WhenAlive">
+                                            = le <span class="account previous mu">montant au temps précédent</span>
+                                        </span>
+    
+                                        <span class="AmountComment CoCreator NonCreator AfterDeath">
+                                            = le <span class="account previous mu">montant au temps précédent</span>
+                                        </span>
+                                        <span class="TransactionsDesc">moins transaction 1, plus transaction 2</span>
+                                    </p>
+                                
+                                    <p>
+                                        <span class="AmountComment CoCreators NoCreators AtMoneyBirth">
+                                            = <span class="StartingPercentage ParamLink value">0 %</span>&nbsp;*&nbsp;<span class="UD0 value ParamLink">0</span><span class="prodFactor">&nbsp;*&nbsp;12</span>&nbsp;/&nbsp;<span class="growth value ParamLink">0 %</span>
+                                        </span>
+    
+                                        <span class="AmountComment CoCreators AtBirth">
+                                            = <span class="StartingPercentage ParamLink value">0 %</span>&nbsp;*&nbsp;(<span class="average previous mu value">0</span>&nbsp;+&nbsp;<span class="dividend current mu value">0</span>)
+                                        </span>
+    
+                                        <span class="AmountComment NoCreators AtBirth">
+                                            = <span class="StartingPercentage ParamLink value">0 %</span>&nbsp;*&nbsp;<span class="average previous mu value">0</span>
+                                        </span>
+    
+                                        <span class="AmountComment CoCreator WhenAlive">
+                                            = <span class="account previous mu value">0</span>&nbsp;+&nbsp;<span class="dividend current mu value">0</span>
+                                        </span>
+    
+                                        <span class="AmountComment NonCreator WhenAlive">
+                                            = <span class="account previous mu value">0</span>
+                                        </span>
+    
+                                        <span class="AmountComment CoCreator NonCreator AfterDeath">
+                                            = <span class="account previous mu value">0</span>
+                                        </span>
+    
+                                        <span class="TransactionsValuesDesc"> - 1 + 1</span>
+                                    </p>
+                                </div>
+                                
+                                <div class="RefComment MU-log">
+                                    <p><span class="account name">compte</span>, le <span class="dateValue">01-01-2001</span>, est âgé de <span class="accountAge">0</span> et vaut&nbsp;: <span class="account mu logValue nolink">0</span> <span class="muLogUnit">Unité Monétaire (log)</span></p>
+                                
+                                    <p>= log népérien de la <span class="account current mu">valeur exprimée en <span class="muUnit">Unité Monétaire</span></span> divisé par log népérien de 10 =&nbsp;ln(<span class="account current mu value">0</span>)&nbsp;/&nbsp;ln(10)</p>
+                                </div>
+                                
+                                <div class="RefComment UD">
+                                    <p><span class="account name">compte</span>, le <span class="dateValue">01-01-2001</span>, est âgé de <span class="accountAge">0</span> et vaut&nbsp;: <span class="account ud value nolink">0</span> <span class="duUnit">DU</span></p>
+                                
+                                    <p>= la <span class="account current mu">valeur exprimée en <span class="muUnit">Unité Monétaire</span></span> divisée par le <span class="dividend current mu">dernier DU</span> =&nbsp;<span class="account current mu value">0</span>&nbsp;/&nbsp;<span class="dividend current mu value">0</span></p>
+                                </div>
+                                
+                                <div class="RefComment UD-log">
+                                    <p><span class="account name">compte</span>, le <span class="dateValue">01-01-2001</span>, est âgé de <span class="accountAge">0</span> et vaut&nbsp;: <span class="account ud logValue nolink">0</span> <span class="duLogUnit">DU (log)</span></p>
+                                
+                                    <p>= log népérien de la <span class="account ud">valeur exprimée en <span class="duUnit">DU</span></span> divisé par log népérien de 10 =&nbsp;ln(<span class="account ud value">0</span>)&nbsp;/&nbsp;ln(10)</p>
+                                </div>
+                                
+                                <div class="RefComment MN">
+                                    <p><span class="account name">compte</span>, le <span class="dateValue">01-01-2001</span>, est âgé de <span class="accountAge">0</span> et vaut&nbsp;: <span class="account mn value nolink">0</span> <span class="mnUnit">% M/N</span></p>
+                                
+                                    <p>= 100 fois la <span class="account current mu">valeur exprimée en <span class="muUnit">Unité Monétaire</span></span> divisée par <span class="average current mu">M/N</span> =&nbsp;100&nbsp;*&nbsp;<span class="account current mu value">0</span>&nbsp;/&nbsp;<span class="average current mu value">0</span></p>
+                                </div>
+                                
+                                <div class="RefComment MN-log">
+                                    <p><span class="account name">compte</span>, le <span class="dateValue">01-01-2001</span>, est âgé de <span class="accountAge">0</span> et vaut&nbsp;: <span class="account mn logValue nolink">0</span> <span class="mnLogUnit">% M/N (log)</span></p>
+                                
+                                    <p>= log népérien de la <span class="account mn">valeur exprimée en <span class="mnUnit">% M/N</span></span> divisé par log népérien de 10 =&nbsp;ln(<span class="account mn value">0</span>)&nbsp;/&nbsp;ln(10)</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="Comment" id="dividendComment">
+                            <div class="CurveComment">
+                                <p>Dans ce deuxième diagramme (en haut à droite), l'évolution au fil du temps du <span class="dividend">Dividende Universel</span> est représentée. La formule utilisée pour le calculer est <span class="dividend formulaName">DUA</span>, comme indiquée entre parenthèses dans la légende. L'onglet <span class="dividendTabLink">Dividende Universel</span> présente différentes formules et permet de les tester.</p>
+                                <p class="prodFactor">
+                                    Dans la configuration actuelle, <span class="growth ParamLink">c</span> est défini sur une base annuelle et l'émission du DU est <span class="UD0 ParamLink">mensualisée</span>. Suivant la formule du DU utilisée, elle est remaniée d'un facteur 12 (observable au moment de la réévaluation annuelle du DU). 
+                                </p>
+                            </div>
+
+                            <div class="PointComment">
+                                <div class="RefComment MU">
+                                    <p><span class="dividend label">Dividende Universel</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="dividend current mu value nolink">0</span> <span class="muUnit">Unité monétaire</span></p>
+                                    
+                                    <div class="DuComment NoUD">
+                                        <p>La valeur 0 est utilisée pour marquer la date se trouvant juste avant l'émission du premier DU.</p>
+                                    </div>
+    
+                                    <div class="DuComment UD0">
+                                        <p>= le montant du premier Dividende Universel <span class="UD0 ParamLink">DU0</span>.</p>
+                                    </div>
+    
+                                    <div class="DuComment UDM">
+                                        <p>= le montant du précédent DU (le même DU est émis chaque mois jusqu'à la réévaluation annuelle).</p>
+                                    </div>
+    
+                                    <div class="DuComment BasicUD">
+                                        <p>= <span class="growth ParamLink">c</span> multiplié par la <span class="monetarySupply previous mu">masse monétaire avant émission des DU</span> divisée par le <span class="headcount current">nombre d'individus</span><span class="prodFactor">&nbsp;et par 12 mois</span> =&nbsp;<span class="growth value ParamLink">0 %</span>&nbsp;*&nbsp;<span class="monetarySupply previous mu value">0</span>&nbsp;/&nbsp;<span class="headcount current value">0</span><span class="prodFactor">&nbsp;/&nbsp;12</span></p>
+                                    </div>
+    
+                                    <div class="DuComment UDA">
+                                        <p>= la plus grande valeur entre&nbsp;:</p>
+                                        <ul>
+                                            <li>le <span class="dividend previous mu">précédent DU</span>&nbsp;: <span class="dividend previous mu value">0</span></li>
+                                            <li>DU<sub>basique</sub>&nbsp;: <span class="growth value ParamLink">0 %</span>&nbsp;*&nbsp;<span class="monetarySupply previous mu value">0</span>&nbsp;/&nbsp;<span class="headcount current value">0</span><span class="prodFactor">&nbsp;/&nbsp;12</span> =&nbsp;<span class="dividend basicMuValue">0</span></li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="DuComment UDB">
+                                        <p>= le <span class="dividend previous mu">précédent DU</span> multiplié par <span class="growth ParamLink">c</span> =&nbsp;(1&nbsp;+&nbsp;<span class="growth value ParamLink">0</span>)&nbsp;*&nbsp;<span class="dividend previous mu value">0</span></p>
+                                    </div>
+    
+                                    <div class="DuComment UDC">
+                                        <p>= la valeur moyenne entre celle obtenue avec DU<sub>basique</sub> et celle obtenue avec DUB =&nbsp;(<span class="growth value ParamLink">0 %</span>&nbsp;*&nbsp;<span class="monetarySupply previous mu value">0</span>&nbsp;/&nbsp;<span class="headcount current value">0</span><span class="prodFactor">&nbsp;/&nbsp;12</span>&nbsp;+&nbsp;(1&nbsp;+&nbsp;<span class="growth value ParamLink">0</span>)&nbsp;*&nbsp;<span class="dividend previous mu value">0</span>)&nbsp;/&nbsp;2</p>
+                                    </div>
+    
+                                    <div class="DuComment UDG">
+                                        <p>= le <span class="dividend previous mu">précédent DU</span> auquel est ajouté le carré de <span class="growth ParamLink">c</span> multiplié par la <span class="monetarySupply previous2 mu">masse monétaire précédente</span> divisée par le <span class="headcount previous">précédent nombre d'individus</span><span class="prodFactor">&nbsp;et par 12 mois</span></p>
+                                        <p>= <span class="dividend previous mu value">0</span>&nbsp;+&nbsp;<span class="growth value ParamLink">0 %</span><sup>2</sup>&nbsp;*&nbsp;<span class="monetarySupply previous2 mu value">0</span>&nbsp;/&nbsp;<span class="headcount previous value">0</span><span class="prodFactor">&nbsp;/&nbsp;12</span></p>
+                                    </div>
+    
+                                </div>
+                                
+                                <div class="RefComment MU-log">
+                                    <p><span class="dividend label">Dividende Universel</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="dividend mu logValue nolink">0</span> <span class="muLogUnit">Unité monétaire (log)</span></p>
+                                
+                                    <p>= log népérien de la <span class="dividend current mu">valeur exprimée en <span class="muUnit">Unité Monétaire</span></span> divisé par log népérien de 10 =&nbsp;ln(<span class="dividend current mu value">0</span>)&nbsp;/&nbsp;ln(10)</p>
+                                </div>
+                                
+                                <div class="RefComment UD">
+                                    <p><span class="dividend label">Dividende Universel</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="dividend ud value nolink">0</span> <span class="duUnit">DU</span></p>
+                                
+                                    <p>= la <span class="dividend current mu">valeur exprimée en <span class="muUnit">Unité Monétaire</span></span> divisée par le <span class="dividend current mu">dernier DU</span> =&nbsp;<span class="dividend current mu value">0</span>&nbsp;/&nbsp;<span class="dividend current mu value">0</span></p>
+                                </div>
+                                
+                                <div class="RefComment UD-log">
+                                    <p><span class="dividend label">Dividende Universel</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="dividend ud logValue nolink">0</span> <span class="duLogUnit">DU (log)</span></p>
+                                
+                                    <p>= log népérien de la <span class="dividend ud">valeur exprimée en <span class="duUnit">DU</span></span> divisé par log népérien de 10 =&nbsp;ln(<span class="dividend ud value">0</span>)&nbsp;/&nbsp;ln(10)</p>
+                                </div>
+                                
+                                <div class="RefComment MN">
+                                    <p><span class="dividend label">Dividende Universel</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="dividend mn value nolink">0</span> <span class="mnUnit">% M/N</span></p>
+                                
+                                    <p>= 100 fois la <span class="dividend current mu">valeur exprimée en <span class="muUnit">Unité Monétaire</span></span> divisée par <span class="average current mu">M/N</span> =&nbsp;100&nbsp;*&nbsp;<span class="dividend current mu value">0</span>&nbsp;/&nbsp;<span class="average current mu value">0</span></p>
+                                </div>
+                                
+                                <div class="RefComment MN-log">
+                                    <p><span class="dividend label">Dividende Universel</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="dividend mn logValue nolink">0</span> <span class="mnLogUnit">% M/N (log)</span></p>
+                                
+                                    <p>= log népérien de la <span class="dividend mn">valeur exprimée en <span class="mnUnit">% M/N</span></span> divisé par log népérien de 10 =&nbsp;ln(<span class="dividend mn value">0</span>)&nbsp;/&nbsp;ln(10)</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <div class="Comment" id="stableDividendComment">
+                            <div class="CurveComment">
+                                <p>En <span class="StartingPercentage ParamLink">monnaie pleine</span>, DU(t+1)&nbsp;=&nbsp;c*(M/N)(t), mais aussi DU(t+1)&nbsp;=&nbsp;(1+c)*DU(t). Ainsi, en combinant ces deux formules, on a c/(1+c)*(M/N)(t)&nbsp;=&nbsp;DU(t). Autrement dit, quelqu'un qui connaît la moyenne <span class="average">M/N</span> courante peut facilement en déduire le montant du <span class="dividend">DU</span> courant.</p>
+                                
+                                <p>Dans le deuxième diagramme (en haut à droite), la courbe <span class="stableDividend label">DU pleine</span> représente cette valeur théorique c/(1+c)*<span class="average">M/N</span>. Elle permet de voir dans quelle proportion, suivant la formule choisie pour le calculer (voir onglet <span class="dividendTabLink">Dividende Universel</span>), le <span class="dividend">DU</span> tend vers cette <span class="stableDividend">valeur théorique</span>. <span class="prodFactor">Dans la configuration actuelle, <span class="growth ParamLink">c</span> est défini sur une base annuelle et l'émission du DU est <span class="UD0 ParamLink">mensualisée</span>. Une division par 12 est donc à appliquer.</span></p>
+                            </div>
+                            
+                            <div class="PointComment">
+                                <div class="RefComment MU">
+                                    <p><span class="stableDividend label">DU pleine</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="stableDividend current mu value nolink">0</span> <span class="muUnit">Unité monétaire</span></p>
+                                
+                                    <p>= <span class="growth value ParamLink">0 %</span>&nbsp;/&nbsp;(1&nbsp;+&nbsp;<span class="growth value ParamLink">0 %</span>)&nbsp;*&nbsp;<span class="average current mu value">0</span><span class="prodFactor">&nbsp;/&nbsp;12</span></p>
+                                </div>
+                                
+                                <div class="RefComment MU-log">
+                                    <p><span class="stableDividend label">c*M/N</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="stableDividend mu logValue nolink">0</span> <span class="muLogUnit">Unité monétaire (log)</span></p>
+                                
+                                    <p>= log népérien de la <span class="stableDividend current mu">valeur exprimée en <span class="muUnit">Unité Monétaire</span></span> divisé par log népérien de 10 =&nbsp;ln(<span class="stableDividend current mu value">0</span>)&nbsp;/&nbsp;ln(10)</p>
+                                </div>
+                                
+                                <div class="RefComment UD">
+                                    <p><span class="stableDividend label">c*M/N</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="stableDividend ud value nolink">1</span> <span class="duUnit">DU</span></p>
+                                
+                                    <p>= la <span class="stableDividend current mu">valeur exprimée en <span class="muUnit">Unité Monétaire</span></span> divisée par le <span class="dividend current mu">dernier DU</span> =&nbsp;<span class="stableDividend current mu value">0</span>&nbsp;/&nbsp;<span class="dividend current mu value">0</span></p>
+                                </div>
+                                
+                                <div class="RefComment UD-log">
+                                    <p><span class="stableDividend label">c*M/N</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="stableDividend ud logValue nolink">0</span> <span class="duLogUnit">DU (log)</span></p>
+                                
+                                    <p>= log népérien de la <span class="stableDividend ud">valeur exprimée en <span class="duUnit">DU</span></span> divisé par log népérien de 10 =&nbsp;ln(<span class="stableDividend ud value">0</span>)&nbsp;/&nbsp;ln(10)</p>
+                                </div>
+                                
+                                <div class="RefComment MN">
+                                    <p><span class="stableDividend label">c*M/N</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="stableDividend mn value nolink">0</span> <span class="mnUnit">% M/N</span></p>
+                                
+                                    <p>= 100 fois la <span class="stableDividend current mu">valeur exprimée en <span class="muUnit">Unité Monétaire</span></span> divisée par <span class="average current mu">M/N</span> =&nbsp;100&nbsp;*&nbsp;<span class="stableDividend current mu value">0</span>&nbsp;/&nbsp;<span class="average current mu value">0</span></p>
+                                </div>
+                                
+                                <div class="RefComment MN-log">
+                                    <p><span class="stableDividend label">c*M/N</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="stableDividend mn logValue nolink">0</span> <span class="mnLogUnit">% M/N (log)</span></p>
+                                
+                                    <p>= log népérien de la <span class="stableDividend mn">valeur exprimée en <span class="mnUnit">% M/N</span></span> divisé par log népérien de 10 =&nbsp;ln(<span class="stableDividend mn value">0</span>)&nbsp;/&nbsp;ln(10)</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="Comment" id="headcountComment">
+                            <div class="CurveComment">
+                                <p>Dans ce troisième diagramme (en bas à gauche), l'évolution au fil du temps du <span class="headcount">nombre d'individus</span> co-produisant la monnaie est représentée. Dans les <span class="configLink c3UBI">configurations particulières</span> où il n'y a pas de co-créateurs de la monnaie, les individus non créateurs de la monnaie sont alors comptabilisés.</p>
+    
+                            </div>
+                            <div class="PointComment">
+                                <p><span class="headcount label">Nombre d'individus</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="headcount current value nolink">0</span></p>
+                                
+                                <p>= le nombre d'individus définis dans l'onglet <span class="accountsTabLink">Comptes</span> co-produisant la monnaie à cette date +&nbsp;le nombre d'individus définis via l'onglet <span class="demographyTabLink">Démographie</span> pour le profil "<span class="demographyLabel">Cauchy</span>"</p>
+                                <p>= <span class="accountsTabLink accountsNumberValue">0</span>&nbsp;+&nbsp;<span class="demographyTabLink demographyValue">0</span></p>
+                            </div>
+                                
+                        </div>
+                        
+                        <div class="Comment" id="monetarySupplyComment">
+                            <div class="CurveComment">
+                                <p>Dans ce quatrième diagramme (en bas à droite), l'évolution au fil du temps de la <span class="monetarySupply">masse monétaire</span> est représentée.</p>
+                            </div>
+
+                            <div class="PointComment">
+                                <div class="RefComment MU">
+                                    <p><span class="monetarySupply label">Masse Monétaire</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="monetarySupply current mu value nolink">0</span> <span class="muUnit">Unité monétaire</span></p>
+                                
+                                    <div class="MbComment MB">
+                                        <p>= le <span class="headcount current">nombre d'individus</span> multiplié par le <span class="dividend current mu">DU</span>, auquel s'ajoute d'éventuels <span class="StartingPercentage ParamLink">montants à la naissance</span></p>
+                                        <p>= <span class="headcount current value">0</span>&nbsp;*&nbsp;<span class="dividend current mu value">0</span>&nbsp;+&nbsp;<span class="accountsTabLink birthAmounts value">0</span></p>
+                                    </div>
+                                
+                                    <div class="MbComment NoMB">
+                                        <p>= la <span class="monetarySupply previous mu">masse monétaire avant émission des DU</span> à laquelle s'ajoute, d'une part le <span class="headcount current">nombre d'individus</span> multiplié par le <span class="dividend current mu">DU</span>, d'autre part d'éventuels <span class="StartingPercentage ParamLink">montants à la naissance</span></p>
+                                        <p>= <span class="monetarySupply previous mu value">0</span>&nbsp;+&nbsp;<span class="headcount current value">0</span>&nbsp;*&nbsp;<span class="dividend current mu value">0</span>&nbsp;+&nbsp;<span class="accountsTabLink birthAmounts value">0</span></p>
+                                    </div>
+                                </div>
+                                
+                                <div class="RefComment MU-log">
+                                    <p><span class="monetarySupply label">Masse Monétaire</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="monetarySupply mu logValue nolink">0</span> <span class="muLogUnit">Unité monétaire (log)</span></p>
+                                
+                                    <p>= log népérien de la <span class="monetarySupply current mu">valeur exprimée en <span class="muUnit">Unité Monétaire</span></span> divisé par log népérien de 10 =&nbsp;ln(<span class="monetarySupply current mu value">0</span>)&nbsp;/&nbsp;ln(10)</p>
+                                </div>
+                                
+                                <div class="RefComment UD">
+                                    <p><span class="monetarySupply label">Masse Monétaire</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="monetarySupply ud value nolink">0</span> <span class="duUnit">DU</span></p>
+                                
+                                    <p>= la <span class="monetarySupply current mu">valeur exprimée en <span class="muUnit">Unité Monétaire</span></span> divisée par le <span class="dividend current mu">dernier DU</span> =&nbsp;<span class="monetarySupply current mu value">0</span>&nbsp;/&nbsp;<span class="dividend current mu value">0</span></p>
+                                </div>
+                                
+                                <div class="RefComment UD-log">
+                                    <p><span class="monetarySupply label">Masse Monétaire</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="monetarySupply ud logValue nolink">0</span> <span class="duLogUnit">DU (log)</span></p>
+                                
+                                    <p>= log népérien de la <span class="monetarySupply ud">valeur exprimée en <span class="duUnit">DU</span></span> divisé par log népérien de 10 =&nbsp;ln(<span class="monetarySupply ud value">0</span>)&nbsp;/&nbsp;ln(10)</p>
+                                </div>
+                                
+                                <div class="RefComment MN">
+                                    <p><span class="monetarySupply label">Masse Monétaire</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="monetarySupply mn value nolink">0</span> <span class="mnUnit">% M/N</span></p>
+                                
+                                    <p>= 100 fois la <span class="monetarySupply current mu">valeur exprimée en <span class="muUnit">Unité Monétaire</span></span> divisée par <span class="average current mu">M/N</span></p>
+                                    <p>= 100&nbsp;*&nbsp;<span class="monetarySupply current mu value">0</span>&nbsp;/&nbsp;<span class="average current mu value">0</span></p>
+                                </div>
+                                
+                                <div class="RefComment MN-log">
+                                    <p><span class="monetarySupply label">Masse Monétaire</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="monetarySupply mn logValue nolink">0</span> <span class="mnLogUnit">% M/N (log)</span></p>
+                                
+                                    <p>= log népérien de la <span class="monetarySupply mn">valeur exprimée en <span class="mnUnit">% M/N</span></span> divisé par log népérien de 10 =&nbsp;ln(<span class="monetarySupply mn value">0</span>)&nbsp;/&nbsp;ln(10)</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="Comment" id="stableMonetarySupplyComment">
+                            <div class="CurveComment">
+                                <p>En <span class="StartingPercentage ParamLink">monnaie pleine</span>, DU(t+1)&nbsp;=&nbsp;c*(M/N)(t), mais aussi DU(t+1)&nbsp;=&nbsp;(1+c)*DU(t). Ainsi, en combinant ces deux formules, on a M(t)&nbsp;=&nbsp;N*(1+c)*DU(t)/c. Autrement dit, quelqu'un qui connaît le nombre d'individus <span class="headcount">N</span> et le montant du <span class="dividend">DU</span> courant peut facilement en déduire la masse monétaire <span class="monetarySupply">M</span> courante.</p>
+                                    
+                                <p>Dans le quatrième diagramme (en bas à droite), la courbe <span class="stableMonetarySupply label">Masse pleine</span> représente cette valeur théorique (1+<span class="growth ParamLink">c</span>)*<span class="headcount">N</span>*<span class="dividend">DU</span>/<span class="growth ParamLink">c</span>. Elle permet de voir dans quelle proportion, suivant la formule choisie pour calculer le DU (voir onglet <span class="dividendTabLink">Dividende Universel</span>), la <span class="monetarySupply label">masse monétaire</span> tend vers cette <span class="stableMonetarySupply">valeur théorique</span>. <span class="prodFactor">Dans la configuration actuelle, <span class="growth ParamLink">c</span> est défini sur une base annuelle et l'émission du DU est <span class="UD0 ParamLink">mensualisée</span>. Une multiplication par 12 est donc à appliquer.</span></p>
+                            </div>
+                                
+                            <div class="PointComment">
+                                <div class="RefComment MU">
+                                    <p><span class="stableMonetarySupply label">Masse pleine</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="stableMonetarySupply current mu value nolink">0</span> <span class="muUnit">Unité monétaire</span></p>
+                                
+                                    <p>= (1&nbsp;+&nbsp;<span class="growth value">0 %</span>)&nbsp;*&nbsp;<span class="headcount current value">0</span>&nbsp;*&nbsp;<span class="dividend current mu value">0</span>&nbsp;/&nbsp;<span class="growth value">0 %</span><span class="prodFactor">&nbsp;*&nbsp;12</span></p>
+                                </div>
+                                
+                                <div class="RefComment MU-log">
+                                    <p><span class="stableMonetarySupply label">N*DU/c</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="stableMonetarySupply mu logValue nolink">0</span> <span class="muLogUnit">Unité monétaire (log)</span></p>
+                                
+                                    <p>= log népérien de la <span class="stableMonetarySupply current mu">valeur exprimée en <span class="muUnit">Unité Monétaire</span></span> divisé par log népérien de 10 =&nbsp;ln(<span class="stableMonetarySupply current mu value">0</span>)&nbsp;/&nbsp;ln(10)</p>
+                                </div>
+                                
+                                <div class="RefComment UD">
+                                    <p><span class="stableMonetarySupply label">N*DU/c</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="stableMonetarySupply ud value nolink">0</span> <span class="duUnit">DU</span></p>
+                                
+                                    <p>= la <span class="stableMonetarySupply current mu">valeur exprimée en <span class="muUnit">Unité Monétaire</span></span> divisée par le <span class="dividend current mu">dernier DU</span> =&nbsp;<span class="stableMonetarySupply current mu value">0</span>&nbsp;/&nbsp;<span class="dividend current mu value">0</span></p>
+                                </div>
+                                
+                                <div class="RefComment UD-log">
+                                    <p><span class="stableMonetarySupply label">N*DU/c</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="stableMonetarySupply ud logValue nolink">0</span> <span class="duLogUnit">DU (log)</span></p>
+                                
+                                    <p>= log népérien de la <span class="stableMonetarySupply ud">valeur exprimée en <span class="duUnit">DU</span></span> divisé par log népérien de 10 =&nbsp;ln(<span class="stableMonetarySupply ud value">0</span>)&nbsp;/&nbsp;ln(10)</p>
+                                </div>
+                                
+                                <div class="RefComment MN">
+                                    <p><span class="stableMonetarySupply label">N*DU/c</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="stableMonetarySupply mn value nolink">0</span> <span class="mnUnit">% M/N</span></p>
+                                
+                                    <p>= 100 fois la <span class="stableMonetarySupply current mu">valeur exprimée en <span class="muUnit">Unité Monétaire</span></span> divisée par <span class="average current mu">M/N</span> =&nbsp;100&nbsp;*&nbsp;<span class="stableMonetarySupply current mu value">0</span>&nbsp;/&nbsp;<span class="average current mu value">0</span></p>
+                                </div>
+                                
+                                <div class="RefComment MN-log">
+                                    <p><span class="stableMonetarySupply label">N*DU/c</span> le <span class="dateValue">01-01-2001</span> vaut&nbsp;: <span class="stableMonetarySupply mn logValue nolink">0</span> <span class="mnLogUnit">% M/N (log)</span></p>
+                                
+                                    <p>= log népérien de la <span class="stableMonetarySupply mn">valeur exprimée en <span class="mnUnit">% M/N</span></span> divisé par log népérien de 10 =&nbsp;ln(<span class="stableMonetarySupply mn value">0</span>)&nbsp;/&nbsp;ln(10)</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <!-- Workshops Tab Comments -->
+                        <div class="Comment" id="WorkshopsTabComment">
+                            <p>
+                                <strong>N'hésitez pas !</strong> cliquez, testez différents attributs, différentes fonctionnalités, puis utilisez l'historique du navigateur pour revenir en arrière.
+                            </p>
+                            
+                            <p>
+                                Ce premier onglet <span class="workshopsTabLink">Ateliers</span> met en avant différentes configurations, rangées par thème et sélectionnables via des listes déroulantes. La première configuration de la première liste est intitulée <span class="configLink cS0">Départ à 0</span>. 
+                            </p>
+                            
+                            <p>
+                                Si vous cliquez ce lien <span class="configLink cS0">Départ à 0</span>&nbsp;: 
+                                <ul>
+                                    <li>la configuration associée sera sélectionnée dans la liste déroulante du "Thème 1"&nbsp;;</li>
+                                    <li>un commentaire dédié sera affiché.</li>
+                                </ul>
+                            </p>
+                            
+                            <p>
+                                <strong>Défi&nbsp;:</strong> ouvrez cette appli dans un second onglet et essayez de reproduire une des configurations. Ludique et formateur&nbsp;!
+                            </p>
+                            
+                        </div>
+                        <div class="Comment" id="cS0Comment">
+                            <p><strong>Note</strong>&nbsp;: chaque point des courbes peut être cliqué, la façon dont il est calculé sera alors indiquée. <strong>N'hésitez pas</strong>, l'historique du navigateur peut être utilisé pour revenir en arrière.</p>
+                            
+                            <p>Dans cette configuration, le système monétaire est constitué d'un seul individu, comme nous le confirme la <span class="headcount">courbe du nombre d'individus</span> (voir le graphe en bas à gauche). Le compte de cet individu est représenté par une <span class="account">courbe</span> dans le graphe en haut à gauche.</p>
+                            
+                            <p>Dans le graphe en haut à droite, vous pouvez voir la <span class="dividend">courbe du Dividende Universel</span>. Ici, la formule fondamentale de base DU&nbsp;=&nbsp;c*M/N est utilisée. Son aspect heurté est notable (elle passe de 0 à 1000 pour redescendre ensuite à 100). D'autres formules peuvent être utilisées (voir l'onglet <span class="dividendTabLink">Dividende Universel</span>) ce qui permet de mettre en évidence l'effet de "lissage" de chacune.</p>
+                            
+                        </div>
+                        <div class="Comment" id="cNOSTEPComment">
+                            <p>Cette configuration n'a qu'une seule différence par rapport à la <span class="configLink cX40">précédente</span>&nbsp;: les "Courbes en escalier" sont désactivées grâce à une case à cocher se trouvant dans l'onglet <span class="DisplayTabLink">Affichage</span>.</p>
+
+                            <p>Dans cette configuration sans "Courbes en escalier", les points calculés pour chaque année sont directement reliés par des lignes. Ces segments forment ainsi des courbes "lisses" qui aident à mieux visualiser les variations. Mais ils sont aussi trompeurs&nbsp;: par exemple, ils peuvent laisser penser qu'au bout d'un mois, le montant sur le compte a augmenté. En cochant la case <span class="DisplayTabLink">"Courbes en escalier"</span>, on a des courbes en escalier qui n'ont plus cet inconvénient.</p>
+                            
+                        </div>
+                        <div class="Comment" id="cSMNComment">
+                            <p>Ici aussi, le système monétaire est constitué d'un seul individu mais il démarre avec une somme le plaçant en <span class="StartingPercentage ParamLink">monnaie pleine</span> (cliquez le lien pour en savoir plus).</p>
+                            
+                            <p>En testant les différentes formules de calcul du <span class="dividendTabLink">Dividende Universel</span>, vous pouvez noter que les courbes ne changent pas&nbsp;: en <span class="StartingPercentage ParamLink">monnaie pleine</span>, toutes sont équivalentes à la formule fondamentale de base DU&nbsp;=&nbsp;c*M/N.</p>
+                            
+                            <p><strong>Note</strong>&nbsp;: la légende d'un graphe peut être cliqué pour commander la visibilité des courbes.</p>
+                            
+                            <p><strong>Note</strong>&nbsp;: l'état de l'application est contenu sous une forme codée dans la zone "Adresse" du navigateur (voir la série de caractères qui suit le "?"), ce qui en facilite l'échange lors de discussion, ou la sauvegarde sous forme de marque-page/favori.</p>
+                            
+                        </div>
+                        <div class="Comment" id="cX40Comment">
+                            <p>Comme <span class="configLink cSMN">précédemment</span>, le système monétaire est constitué d'un seul individu qui démarre avec une somme le plaçant en <span class="StartingPercentage ParamLink">monnaie pleine</span>. Dans cette configuration, la différence réside dans la période représentée, qui couvre maintenant 40 ans au lieu de 5 (voir l'onglet <span class="DisplayTabLink">Affichage</span>).</p>
+                            
+                            <p>Dans le graphe en bas à droite, les variations au fil du temps de la <span class="monetarySupply">masse monétaire</span> sont représentées. Étant en <span class="StartingPercentage ParamLink">monnaie pleine</span>, vous pouvez vérifier qu'elle est multipliée par 40 au bout de 40 ans, ce qui est propre au taux d'expansion utilisé (voir l'onglet <span class="growthTabLink">Taux d'expansion</span>), qui n'est plus de 10&nbsp;% par an comme précédemment, mais de 9.66&nbsp;%.</p>
+                            
+                            <p>Vous pouvez une fois de plus vérifier qu'en <span class="StartingPercentage ParamLink">monnaie pleine</span>, toutes les formules du <span class="dividendTabLink">Dividende Universel</span> sont équivalentes.</p>
+                            
+                        </div>
+                        <div class="Comment" id="cSMN-MComment">
+                            <p>Cette configuration est la même que <span class="configLink cSMN">"Départ à DU0/c"</span>, excepté que dans l'onglet <span class="dividendTabLink">Dividende Universel</span>, <span class="UD0 ParamLink">DU0</span> a été positionné sur "Taux et émission mensuels". Cette action change non seulement le rythme d'émission (action également disponible dans l'onglet <span class="growthTabLink">Taux d'expansion</span>), mais propose également un <span class="UD0 ParamLink">DU0</span> calculé pour garder "DU0/c" inchangé. Ici, <span class="UD0 ParamLink">DU0</span> vaut donc 79.74 unités monétaires au lieu de 1000.</p>
+                            
+                            <p>Petit exercice&nbsp;:
+                                <ul>
+                                    <li>
+                                        cliquez le premier point de <span class="account">Compte 1</span> pour voir le détail du calcul, et notez qu'il vaut 10&nbsp;000 unités monétaires&nbsp;;
+                                    </li>
+                                    <li>
+                                        cliquez le dernier point, notez que sa valeur est 14&nbsp;600 unités monétaires&nbsp;;
+                                    </li>
+                                    <li>
+                                        sélectionnez la configuration <span class="configLink cSMN">"Départ à DU0/c"</span> et vérifiez que vous retrouvez bien les mêmes valeurs. 
+                                    </li>
+                                </ul>
+                            </p>
+                            
+                        </div>
+                        <div class="Comment" id="cS0-MComment">
+                            <p>Cette configuration est la même que <span class="configLink cSMN-M">précédemment</span>, excepté que <span class="account">Compte 1</span> part à 0 au lieu de "DU0/c". Elle peut également être comparée à la configuration <span class="configLink cS0">"Départ à 0"</span> (n'hésitez pas à cliquer et à revenir en arrière)&nbsp;: la différence est alors que l'émission est ici mensuelle, et <span class="UD0 ParamLink">DU0</span> vaut 79.74 unités monétaires au lieu de 1000.</p>
+                            
+                            <p>Cette fois, si vous notez la valeur pour le dernier point de <span class="account">Compte 1</span>, la valeur est 116 unités monétaires, alors que dans la configuration <span class="configLink cS0">"Départ à 0"</span>, elle vaut 1&nbsp;330. Ainsi, contrairement à ce qui a été constaté précédemment en comparant les configurations <span class="configLink cSMN-M">"Départ à DU0/c (mois)"</span> et <span class="configLink cSMN">"Départ à DU0/c"</span>, vous ne retrouverez pas les mêmes valeurs.</p>
+                            
+                            <p>La formule utilisée pour le calcul du DU est "DU Basique". En utilisant par exemple DUĞ (voir l'onglet <span class="dividendTabLink">Dividende Universel</span>) la valeur pour le dernier point de <span class="account">Compte 1</span> est alors 3&nbsp;920 unités monétaires, puis 4&nbsp;040 en passant en émission annuelle. La différence est bien moindre, cela illustre la qualité des différentes formules.</p>
+                            
+                        </div>
+                        <div class="Comment" id="cS0-YMComment">
+                            <p>Cette configuration est la même que <span class="configLink cS0">"Départ à 0"</span>, excepté que dans l'onglet <span class="dividendTabLink">Dividende Universel</span>, <span class="UD0 ParamLink">DU0</span> a été positionné sur "Taux annuel, émission mensuelle" (au lieu de "Taux et émission annuels"). Si vous comparez les deux, là encore, n'étant pas en <span class="StartingPercentage ParamLink">monnaie pleine</span>, vous ne retrouverez pas les mêmes valeurs.</p>
+                            
+                            <p>Cette configuration peut également être comparée à la <span class="configLink cS0-M">précédente</span>, où le DU est réévalué chaque mois, alors qu'il n'est ici ré-évalué qu'une fois par an. En particulier, en observant la courbe du <span class="dividend label">Dividende Universel</span>, vous pouvez vérifier que le même DU est émis 12 mois consécutivement.</p>
+                            
+                        </div>
+                        <div class="Comment" id="c2CCComment">
+                            <p>Au départ, dans cette configuration, le système monétaire est constitué d'un seul individu, puis un deuxième entre dans le système un an après le premier.</p>
+                            
+                            <p>Dans les graphes, les montants sont exprimés, non plus en nombre d'unités monétaires, mais en <span class="ReferenceFrameSelector ParamLink">pourcentage</span> de la répartition moyenne par individu (sur ce sujet, voir l'onglet <span class="referenceTabLink">Référentiel</span>). Vous pouvez vérifier que la courbe <span class="average label">M/N</span> apparaît comme une horizontale "Montant&nbsp;=&nbsp;100&nbsp;%". A noter également la <span class="monetarySupply">masse monétaire</span> est à 100&nbsp;% dans un premier temps, puis à 200&nbsp;% lors de l'arrivée du deuxième individu.</p>
+                            
+                            <p>En testant les différentes formules de calcul du <span class="dividendTabLink">Dividende Universel</span>, vous pouvez comparer les vitesses de convergence des comptes vers la <span class="average">moyenne</span>.</p>
+                            
+                        </div>
+                        <div class="Comment" id="cCAUCHYComment">
+                            <p>Comme <span class="configLink c2CC">précédemment</span>, les montants sont exprimés en <span class="ReferenceFrameSelector ParamLink">pourcentage</span> de la répartition moyenne par individu. Là encore (voir graphe en haut à gauche), deux comptes sont représentés, mais sur une période plus longue.</p>
+                            
+                            <p>Ici, DUĞ est utilisée. Autre différence (voir graphe en bas à gauche), un plus grand nombre d'individus constitue le système monétaire, ce qui est paramétrable dans l'onglet <span class="demographyTabLink">Démographie</span>, en appliquant un profil. Ici, nous simulons une montée de la population vers un sommet suivie d'une descente dans les mêmes proportions.</p>
+                            
+                            <p>Dans le graphe en haut à droite illustrant les variations du DU, la courbe <span class="stableDividend label">DU pleine</span> est affichée. Le référentiel étant le <span class="ReferenceFrameSelector ParamLink">%(M/N)</span>, elle apparaît comme une horizontale "y=c/(1+c)" (pour en savoir plus, cliquez la courbe). Au facteur 1/(1+c) près, nous voyons donc le <span class="stableDividend label">c<sub>théorique</sub></span> comparé au <span class="dividend label">c<sub>mesuré</sub></span>. Testez les différentes formules, et voyez dans quelle mesure le <span class="dividend label">c<sub>mesuré</sub></span> rejoint le <span class="stableDividend label">c<sub>théorique</sub></span> (quand N croit, <strong>mais aussi</strong> quand N décroît). Quelle formule offre le meilleur compromis ?</p>
+                            
+                        </div>
+                        <div class="Comment" id="c4DATESComment">
+                            <p>Dans cette configuration, la période couverte ainsi que le profil pour l'évolution de la population sont les mêmes que <span class="configLink cCAUCHY">précédemment</span>. L'affichage des montants se fait désormais en nombre de DU (voir l'onglet <span class="referenceTabLink">Référentiel</span>).</p>
+                            
+                            <p>Dans le graphe en haut à gauche, deux comptes de plus sont affichés afin de mieux visualiser l'impact de la variation de la population suivant la date d'arrivée dans la monnaie d'un individu.</p>
+                            
+                            <p>De plus, dans ce graphe, la courbe <span class="stableAverage label">M/N pleine</span> est affichée, permettant de vérifier qu'elle apparaît comme une horizontale "y=(1+c)/c" (pour en savoir plus, cliquez la courbe).</p>
+                            
+                        </div>
+                        <div class="Comment" id="cLMU1Comment">
+                            <p>Deux comptes sont représentés dans cette configuration, et ils ne sont pas co-créateurs de la monnaie. L'unité monétaire est utilisée pour les axes verticaux des graphes. Au cours de l'année 2004, un transfert de 5000 unités monétaires a lieu du <span id="cLMU11-1" class="account">Compte 1</span> vers le <span id="cLMU12-2" class="account">Compte 2</span> (voir <span id="tLMU1-1" class="transaction name">Transaction 1</span>)&nbsp;; puis, chaque année durant les dix suivantes, un transfert de 500 unités monétaires est réalisé du <span id="cLMU13-2" class="account">Compte 2</span> vers le <span id="cLMU14-1" class="account">Compte 1</span> (voir <span id="tLMU1-2" class="transaction name">Transaction 2</span>).</p>
+                            
+                            <p>Au bout de 11 ans, les deux comptes se retrouvent au même montant. Cette configuration pourrait rappeler un prêt suivi d'un remboursement en 10 échéances, sans intérêt.</p>
+                            
+                        </div>
+                        <div class="Comment" id="cLMU2Comment">
+                            <p>Cette configuration est très similaire à la <span class="configLink cLMU1">précédente</span>. Cette fois, <span id="cLMU21-1" class="account">Compte 1</span> et <span id="cLMU22-2" class="account">Compte 2</span> sont co-créateurs de la monnaie. De plus, le DU est l'unité utilisée pour les axes verticaux des graphes.</p>
+                            
+                            <p>Visuellement, par rapport à la <span class="configLink cLMU1">configuration précédente</span>, la partie "Remboursement" apparaît courbée. Autrement dit, dans ce référentiel, les premiers remboursements semblent plus élevés que les derniers.</p>
+                            
+                        </div>
+                        <div class="Comment" id="cLUDComment">
+                            <p>La différence dans cette configuration par rapport à la <span class="configLink cLMU2">précédente</span> est dans l'unité utilisée pour les transactions. Au cours de l'année 2004, un <span id="tLUD-1" class="transaction">transfert</span> de 5 DU (au lieu des 5000 unités monétaires précédemment) a lieu du <span id="cLUD1-1" class="account">Compte 1</span> vers le <span id="cLUD1-2" class="account">Compte 2</span>&nbsp;; puis, chaque année durant les dix suivantes, un <span id="tLUD-2" class="transaction">transfert</span> de 0.5 DU (au lieu des 500 unités monétaires précédemment) est réalisé du <span id="cLUD3-2" class="account">Compte 2</span> vers le <span id="cLUD4-1" class="account">Compte 1</span>.</p>
+                            
+                            <p>Cette fois, au bout de 11 ans, les deux comptes ne se retrouvent pas au même montant, le <span id="cLUD5-1" class="account">compte "prêteur"</span> finit au dessus du <span id="cLUD6-2" class="account">compte "emprunteur"</span>. On dit communément que "les additions fonctionnent mal quand on compte en DU". Là encore, cette configuration pourrait rappeler un prêt suivi d'un remboursement en 10 échéances, mais cette fois avec intérêts.</p>
+                            
+                        </div>
+                        <div class="Comment" id="c3CCComment">
+                            <p>Cette configuration est seulement constituée de trois co-créateurs de la monnaie. Le premier (<span id="c3CC1-2" class="account">Compte 2</span>) démarre avec <span id="c3CCsp-2" class="StartingPercentage ParamLink">50&nbsp;%</span> de <span class="UD0 ParamLink">DU0</span>/c, le deuxième (<span id="c3CC1-3" class="account">Compte 3</span>) avec <span id="c3CCsp-3" class="StartingPercentage ParamLink">150&nbsp;%</span>, et le troisième (<span id="c3CC1-4" class="account">Compte 4</span>) avec <span id="c3CCsp-4" class="StartingPercentage ParamLink">100&nbsp;%</span>. Le <span class="growth ParamLink">taux d'expansion</span> est de 10&nbsp;% par an.</p>
+                            
+                            <p>Au niveau des axes verticaux, le <span class="referenceTabLink">référentiel</span> utilisé est le DU.</p>
+                            
+                            <p>Cette configuration est souvent utilisée pour représenter le phénomène d'attraction vers la moyenne. On peut remarquer que la masse monétaire apparaît comme constante.</p>
+                            
+                            <p>A noter que le <span id="c3CC1-1" class="account">Compte 1</span> n'a pas d'utilité, il n'est présent que pour faciliter la comparaison graphique avec la <span class="configLink c3UBI">configuration suivante</span>. Par défaut, il n'est pas représenté, mais il suffit de cliquer la légende pour le faire apparaître.</p>
+                            
+                        </div>
+                        <div class="Comment" id="c3UBIComment">
+                            <p>Ici, il n'y a <strong>aucun co-créateur</strong> de la monnaie. Le <span id="c3UBI0-1" class="account">Compte 1</span> (par défaut non représenté, cliquez la légende pour le faire apparaître) peut être vu comme une caisse collective. D'abord, il est rempli via un prélèvement de 10&nbsp;% de chaque compte (voir <span id="t3UBI-1" class="transaction name">Transaction 1</span>), puis il est redistribué en totalité et à parts égales (voir <span id="t3UBI-2" class="transaction name">Transaction 2</span>).</p>
+                            
+                            <p>Comme dans la <span class="configLink c3CC">configuration précédente</span>, nous avons trois utilisateurs de la monnaie, le <span id="c3UBI1-2" class="account">premier</span> démarrant avec <span id="c3UBIsp-2" class="StartingPercentage ParamLink">50&nbsp;%</span> de <span class="UD0 ParamLink">DU0</span>/c, le <span id="c3UBI2-3" class="account">deuxième</span> avec <span id="c3UBIsp-3" class="StartingPercentage ParamLink">150&nbsp;%</span>, et le <span id="c3UBI3-4" class="account">troisième</span> avec <span id="c3UBIsp-4" class="StartingPercentage ParamLink">100&nbsp;%</span>.</p>
+                            
+                            <p>Au niveau des axes verticaux, le <span class="referenceTabLink">référentiel</span> utilisé est l'unité monétaire. Graphiquement, cette configuration ressemble étrangement à la <span class="configLink c3CC">précédente</span>, nous pouvons y voir le même phénomène d'attraction vers la moyenne et une masse monétaire constante. Il existe en fait une équivalence entre Dividende Universel par création monétaire et Revenu de Base via une taxe, comme l'a montré Stéphane Laborde.</p>
+                            
+                        </div>
+                        <div class="Comment" id="c4CCComment">
+                            <p>Cette configuration est sensiblement la même que la <span class="configLink c3CC">première</span>&nbsp;: trois co-créateurs de la monnaies, et un compte sans utilité permettant de faciliter la comparaison avec le cas "Revenu de Base via une taxe".</p>
+
+                            <p>Mais un <span id="c4CC1-5" class="account">nouveau compte</span> fait son apparition au bout de quelques années. Le <span class="referenceTabLink">référentiel</span> au niveau des axes verticaux devient "%(M/N)", afin de faciliter la comparaison avec la configuration suivante.</p>
+                            
+                            <p>La formule utilisée pour le calcul du DU est "DU Basique". Il est intéressant de tester d'autres formules, par exemple DUĞ (voir l'onglet <span class="dividendTabLink">Dividende Universel</span>).</p>
+                            
+                        </div>
+                        <div class="Comment" id="c4UBIComment">
+                            <p>Cette configuration est sensiblement la même que la <span class="configLink c3UBI">deuxième</span>&nbsp;: trois non-créateurs de la monnaies, une caisse et deux transactions permettant de réaliser un Revenu de Base via une taxe.</p>
+                        
+                            <p>Comme <span class="configLink c4CC">précédemment</span>, un <span id="c4UBI1-5" class="account">nouveau compte</span> fait son apparition au bout de quelques années. Vu que <span class="headcount">N</span> varie, le <span class="referenceTabLink">référentiel</span> au niveau des axes verticaux est "%(M/N)" (plus adapté pour comparer cette configuration avec la <span class="configLink c4CC">précédente</span>).</p>
+                            
+                            <p>Là encore, graphiquement, cette configuration ressemble étrangement à la <span class="configLink c4CC">précédente</span>.</p>
+                            
+                        </div>
+                        <div class="Comment" id="c4CC-MComment">
+                            <p>Cette configuration est sensiblement la même que la <span class="configLink c4CC">troisième</span>&nbsp;: trois co-créateurs de la monnaies, et un compte sans utilité facilitant la comparaison avec le cas "Revenu de Base via une taxe"&nbsp;; puis un <span id="c4CCM1-5" class="account">nouveau compte</span> fait son apparition au bout de quelques années.</p>
+                        
+                            <p>La différence ici est que l'émission des Dividendes devient mensuelle, passant à 0,797&nbsp;% par mois au lieu de 10&nbsp;% par an.</p>
+                            
+                            <p>La formule de base est utilisée pour le DU. Cette configuration et la <span class="configLink c4UBI-M">suivante</span> (la cinquième) mettront en évidence une équivalence. Mais il sera intéressant de tester d'autres formules pour le DU et de remarquer que l'équivalence est alors moins grande, ce qui parait logique&nbsp;: contrairement aux formules alternatives du DU, le "RdB via une taxe" présenté ici n'est pas prévu pour lisser les variations de N.</p>
+                            
+                        </div>
+                        <div class="Comment" id="c4UBI-MComment">
+                            <p>Cette configuration est sensiblement la même que la <span class="configLink c4UBI">quatrième</span>&nbsp;: trois non-créateurs de la monnaies, une caisse et deux transactions permettant de réaliser un Revenu de Base via une taxe&nbsp;; puis un <span id="c4UBIM1-5" class="account">nouveau compte</span> fait son apparition au bout de quelques années.</p>
+                        
+                            <p>La différence ici est que les transactions sont répétées tous les mois, avec un prélèvement qui passe à 0,797&nbsp;% par mois au lieu de 10&nbsp;% par an.</p>
+                            
+                            <p>En utilisant une émission annuelle, nous pouvions déjà voir combien les deux configurations "DU" et "RdB par taxe" étaient semblables. Avec une émission mensuelle, c'est encore plus criant. Dis autrement&nbsp;: l'émission du DU et du RdB se fait par à-coups, mais plus le rythme est rapide pour s'approcher d'un processus continu, plus les deux configurations  "DU" et "RdB par taxe" sont équivalentes.</p>
+                            
+                        </div>
+                        <div class="Comment" id="c160fComment">
+                            <p>L'attraction vers la moyenne est souvent représentée grâce à un graphe sur 80 ans (comme dans la configuration <span class="configLink c3CC">3 co-créateurs</span>). Mais il est aussi intéressant de réaliser une représentation sur 160 ans, afin de montrer comment la part des morts disparaît progressivement (on peut alors parler de fonte). C'est le but de cette configuration.</p>
+                            
+                            <p>Elle est constituée au départ de trois co-créateurs de la monnaie&nbsp;: le premier (<span id="c160f-1" class="account">Compte 1</span>) démarre avec <span id="c160fsp-1" class="StartingPercentage ParamLink">0&nbsp;%</span> de <span class="UD0 ParamLink">DU0</span>/c, le second (<span id="c160f-2" class="account">Compte 2</span>) avec <span id="c160fsp-2" class="StartingPercentage ParamLink">100&nbsp;%</span>, et le troisième (<span id="c160f-3" class="account">Compte 3</span>) avec <span id="c160fsp-3" class="StartingPercentage ParamLink">200&nbsp;%</span>. Ces montants sont choisis pour se placer en monnaie pleine.</p>
+                            
+                            <p>Pour rester en monnaie pleine sur 160 ans, trois nouveaux co-créateurs sont ajoutés au bout de 80 ans. Ils ne sont pas affichés pour alléger le graphe. Il est intéressant de les rendre visibles afin de faciliter la comparaison avec la <span class="configLink c160h">configuration suivante</span>.</p>
+                            
+                        </div>
+                        <div class="Comment" id="c160hComment">
+                            <p>Cette configuration est très semblable à la <span class="configLink c160h">précédente</span>&nbsp;: 3 co-créateurs sur les 80 premières années suivis de 3 autres les 80 années suivantes.</p>
+                            
+                            <p>
+                                Sauf qu'ici, les unités monétaires, au lieu de rester bloquées sur le compte des morts, sont transmises&nbsp;:
+
+                                <ul>
+                                    <li>le <span id="c160h-4" class="account">Compte 4</span> reçoit à la fois les unités du <span id="c160h-1" class="account">Compte 1</span> (voir <span id="t160h-1" class="transaction name">Transaction 1</span>) et du <span id="c160h-2" class="account">Compte 2</span> (voir <span id="t160h-2" class="transaction name">Transaction 2</span>)&nbsp;;</li>
+                                    <li>le <span id="c160h-5" class="account">Compte 5</span> reçoit les unités du <span id="c160h-3" class="account">Compte 3</span> (voir <span id="t160h-3" class="transaction name">Transaction 3</span>)&nbsp;;</li>
+                                    <li>le <span id="c160h-6" class="account">Compte 6</span> ne reçoit aucune unité.</li>
+                                </ul>
+                            </p>
+                            
+                            <p>Sans surprise, malgré la présence d'héritages, l'attraction vers la moyenne est de nouveau observable.</p>
+                            
+                        </div>
+                            
+                        <!-- Growing Rate Tab Comments -->
+                        <div class="Comment" id="GrowingRateTabComment">
+                            <p>Dans la Théorie Relative de la Monnaie, de nouvelles unités monétaires sont créées régulièrement et sont partagées équitablement entre les <span class="headcount">N</span> individus de la communauté. C'est ce que l'on appelle la co-création de la monnaie.</p>
+                            
+                            <p>Autrement dit, afin de n’avantager aucune époque, chacun des N individus présents à un instant t co-crée régulièrement un même nombre de masse monétaire moyenne <span class="average">M/N</span>. Nous notons ce nombre par la lettre c&nbsp;; et cette quantité c*<span class="average">M/N</span> est appelée <span class="dividend">Dividende Universel</span> (abrégé DU).</p>
+                            
+                            <p>Le nombre c est fixé une fois pour toutes lors de la mise en place de la monnaie.</p>
+
+                        </div>
+                        <div class="Comment" id="LifeExpectancyComment">
+							<p>Au fil du temps, les anciennes unités monétaires sont doucement dilués dans les nouvelles, à un rythme qui ne doit être ni trop rapide – les anciens co-créateurs seraient lésés –, ni trop lent – les nouveaux seraient floués.</p>
+					
+							<p>On sent ici intuitivement que ce rythme doit dépendre de l&rsquo;espérance de vie de la population.</p>
+							
+                        </div>
+                        <div class="Comment" id="CalculateGrowthComment">
+                            <p>En utilisant cette case à cocher, la valeur de la croissance "c" peut, soit être déduite de l'<span class="LifeExpectancy ParamLink">espérance de vie</span>, soit être entrée à la main.</p>
+
+                            <p>Les radio-boutons situés en dessous permettent de choisir la cadence (annuelle ou mensuelle) pour l'émission des nouvelles unités monétaires.</p>
+
+                        </div>
+                        <div class="Comment" id="byYearComment">
+                            <p>Avec ce radio-bouton, on choisit un mode de co-création monétaire dont la fréquence est l'année. Il est intéressant de comparer avec d'autres fréquences, c'est pourquoi le mois est également disponible.</p>
+
+                        </div>
+                        <div class="Comment" id="byMonthComment">
+                            <p>Avec ce radio-bouton, on choisit un mode de co-création monétaire dont la fréquence est le mois.</p>
+
+                            <p>En utilisant la formule de base du Dividende Universel, notez par exemple combien cette formulation favorise les premiers entrants (au démarrage de la monnaie) par rapport à des entrants plus tardifs. L'effet est encore plus criant quand l'émission est mensuelle.</p>
+
+                            <p>On peut visualiser des comptes d'entrants plus tardifs en le spécifiant dans l'onglet <span class="accountsTabLink">Comptes</span>.</p>
+
+                        </div>
+                        <div class="Comment" id="AnnualGrowthComment">
+                            <p>Par défaut, le taux "c" est calculé à partir de l'<span class="LifeExpectancy ParamLink">espérance de vie</span>&nbsp;:&nbsp;c<sub>annuelle</sub>&nbsp;=&nbsp;(<span class="LifeExpectancy ParamLink">ev</span>/2)&nbsp;<sup>1&nbsp;/&nbsp;(<span class="LifeExpectancy ParamLink">ev</span>/2)</sup>&nbsp;-&nbsp;1
+                            <br><a href="LaTrmEnCouleur.html">La TRM en Couleur</a> en dit plus à ce sujet.</p>
+
+                            <p>A noter&nbsp;: si on choisit d'utiliser un <span class="MonthlyGrowth ParamLink">taux mensuel</span> et de le renseigner à la main, le champ du taux annuel est automatiquement modifié afin de faciliter les comparaisons entre les deux rythmes. La formule utilisée est alors&nbsp;: c<sub>annuelle</sub>&nbsp;=&nbsp;(1&nbsp;+&nbsp;<span class="MonthlyGrowth ParamLink">c<sub>mensuelle</sub></span>)<sup>12</sup>&nbsp;-&nbsp;1</p>
+
+                        </div>
+                        <div class="Comment" id="MonthlyGrowthComment">
+                            <p>Par défaut, le taux c mensuel est calculé à partir du taux annuel selon la formule&nbsp;:&nbsp;<span class="MonthlyGrowth ParamLink">c<sub>mensuelle</sub></span>&nbsp;=&nbsp;(1&nbsp;+&nbsp;c<sub>annuelle</sub>)<sup>1/12</sup>&nbsp;-&nbsp;1</p>
+                            
+                            <p>A noter&nbsp;: si on choisit d'utiliser un taux annuel et de le renseigner à la main, le champ du taux mensuel est automatiquement modifié en utilisant cette même formule, ceci afin de faciliter les comparaisons entre les deux rythmes.</p>
+
+                        </div>
+                        
+                        <!-- Universal Divividend Tab Comments -->
+                        <div class="Comment" id="UniversalDividendTabComment">
+                            <p>La monnaie est uniquement créée via le Dividende Universel. Elle démarre avec un premier Dividende que nous noterons DU0. Les comptes passent alors de 0 à DU0 (sauf si certains individus se sont faits allouer un <span class="StartingPercentage ParamLink">montant à la naissance</span>.</p>
+                            
+                        </div>
+                        <div class="Comment" id="AnnualDividendStartComment">
+                            <p>Par défaut, si le rythme de co-création monétaire est annuel, le premier dividende DU0 vaut 1000 unités monétaires. C'est une valeur tout à fait arbitraire. Ce champ permet d'utiliser d'autres valeurs</p>
+
+                            <p>A noter&nbsp;: si par exemple on choisit d'utiliser un <span class="MonthlyGrowth ParamLink">taux mensuel</span> et de renseigner le DU0 mensuel à la main, le champ du DU0 annuel est automatiquement modifié suivant la formule&nbsp;:</p>
+
+                            <p>DU0<sub>annuel</sub> = DU0<sub>mensuel</sub>&nbsp;&times;&nbsp;((1&nbsp;+&nbsp;<span class="MonthlyGrowth ParamLink">c<sub>mensuelle</sub></span>)<sup>12</sup> - 1) / <span class="MonthlyGrowth ParamLink">c<sub>mensuelle</sub></span></p>
+                            
+                            <p>Ces valeurs sont calculées de telle sorte que le total des montants émis dans une année reste le même, quelque soit le rythme d'émission choisi. Cela facilite les comparaisons.</p>
+
+                        </div>
+                        <div class="Comment" id="MonthlyDividendStartComment">
+                            <p>Le montant du DU0 mensuel est par défaut fixé à une valeur calculée à partir du DU0 annuel selon la formule&nbsp;: 
+                            <br>DU0<sub>mensuel</sub> = DU0<sub>annuel</sub>&nbsp;&times;&nbsp;((1&nbsp;+&nbsp;<span class="AnnualGrowth ParamLink">c<sub>annuelle</sub></span>)<sup>1/12</sup> - 1) / <span class="AnnualGrowth ParamLink">c<sub>annuelle</sub></span></p>
+                            
+                            <p>Plus généralement&nbsp;: si on choisit d'utiliser un <span class="AnnualGrowth ParamLink">taux annuel</span> et de renseigner le DU0 annuel à la main, le champ du DU0 mensualisé est automatiquement modifié en utilisant cette même formule.</p>
+
+                            <p>Ces valeurs sont calculées de telle sorte que le total des montants émis dans une année reste le même, quelque soit le rythme d'émission choisi. Cela facilite les comparaisons.</p>
+
+                        </div>
+                        <div class="Comment" id="YearMonthDividendStartComment">
+                            <p>Le montant du DU0 mensualisé est par défaut fixé à une valeur calculée à partir du DU0 annuel selon la formule&nbsp;: 
+                            <br>DU0<sub>mensualisé</sub> = DU0<sub>annuel</sub> / 12</p>
+                            
+                            <p>Plus généralement&nbsp;: si on choisit d'utiliser un <span class="AnnualGrowth ParamLink">taux annuel</span> et de renseigner le DU0 annuel à la main, le champ du DU0 mensuel est automatiquement modifié en utilisant cette même formule.</p>
+
+                            <p>Ces valeurs sont calculées de telle sorte que le total des montants émis dans une année reste le même, quelque soit le rythme d'émission choisi. Cela facilite les comparaisons.</p>
+                            
+                        </div>
+                        <div class="Comment" id="ud0ByYearComment">
+                            <p>Avec ce radio-bouton, on choisit un mode de co-création monétaire dont la fréquence est l'année. Mais il est possible, tout en gardant un taux annuel, de mensualiser l'émission, ce que permet le radio-bouton intitulé "Taux annuel, émission mensuel".</p>
+
+                        </div>
+                        <div class="Comment" id="ud0ByMonthComment">
+                            <p>Avec ce radio-bouton, on choisit un mode de co-création monétaire dont la fréquence est le mois.</p>
+
+                            <p>En utilisant la formule de base du Dividende Universel, notez par exemple combien cette formulation favorise les premiers entrants (au démarrage de la monnaie) par rapport à des entrants plus tardifs. Et notez comme l'effet est encore plus criant quand l'émission est mensuelle.</p>
+
+                            <p>On peut visualiser des comptes d'entrants plus tardifs en le spécifiant dans l'onglet <span class="accountsTabLink">Comptes</span>.</p>
+
+                        </div>
+                        <div class="Comment" id="ud0ByYearMonthComment">
+                            <p>Avec ce radio-bouton, on choisit un mode de co-création monétaire dont la fréquence est le mois mais dont la ré-évalution est du montant est annuelle.</p>
+
+                            <p>Par exemple, pour la Ğ1, l'émission du DU est quotidienne mais sa réévaluation semestrielle.</p>
+                            
+                            <p>L'intérêt est d'avoir moins d'attente entre les émissions du DU, tout en ayant des variations du montant du DU moins fréquentes donc moins perturbantes.</p>
+                            
+                        </div>
+                        <div class="Comment" id="BasicUDComment">
+                            <p>Dans <a href="LaTrmEnCouleur.html">La TRM en Couleur</a>, la population <span class="headcount">N</span> reste constante et la formule fondamentale <span class="dividend">DU(t)</span>&nbsp;=&nbsp;<span class="growth ParamLink">c</span>*<span class="monetarySupply">M(t)</span>/<span class="headcount">N(t)</span> est utilisée.</p>
+
+                            <p>Un défaut de cette formule est de très mal se comporter face à une variation brusque de la population. C'est particulièrement notable au commencement de la monnaie, où le <span class="dividend">DU</span> subit une forte baisse. La configuration <span class="configLink cS0">"Départ à 0"</span> fournit une illustration de ce problème.</p>
+
+                            <p>Les participants initiaux se retrouvent alors avec une part extrêmement importante de la monnaie. C'est pourquoi d'autres formulations sont souhaitables, le but étant qu'elles soient moins sensibles aux variations de <span class="headcount">N</span>, tout en restant équivalentes à la formule fondamentale quand <span class="headcount">N</span> est stable (équivalence que l'on peut vérifier dans la configuration <span class="configLink cSMN">"Départ à DU0/c"</span>).</p>
+
+                        </div>
+                        <div class="Comment" id="UDAComment">
+                            <p>Pour palier au défaut d'un <span class="dividend">DU</span> subissant une grosse baisse quand la population augmente fortement (comme celle observée lors de l'initialisation de la monnaie), on peut décider que le <span class="dividend">DU</span> (exprimé en unité monétaire) ne doit jamais diminuer au fil du temps. Autrement dit, il est calculé à partir de la formule fondamentale <span class="growth ParamLink">c</span>*<span class="monetarySupply">M(t)</span>/<span class="headcount">N(t)</span>, mais si le résultat est inférieur au <span class="dividend">DU</span> du temps précédent, ce dernier est de nouveau utilisé.</p>
+
+                            <p>Remarque&nbsp;: en utilisant l'unité monétaire comme référence (pour cela, voir l'onglet <span class="referenceTabLink">Référentiel</span>), on constate que la courbe du dividende est soit horizontale, soit superposée à la courbe <span class="stableDividend label">DU pleine</span>.</p>
+
+                            <p>Remarque générale&nbsp;: dans certaines configurations, passer en échelle logarithmique peut aider à comparer chaque courbe (là aussi, voir l'onglet <span class="referenceTabLink">Référentiel</span>).</p>
+
+                        </div>
+                        <div class="Comment" id="UDBComment">
+                            <p>Remarque préliminaire&nbsp;: quand la population <span class="headcount">N</span> reste constante, toutes les formulations du <span class="dividend">DU</span> doivent être équivalentes à la formule fondamentale <span class="growth ParamLink">c</span>*<span class="monetarySupply">M(t)</span>/<span class="headcount">N(t)</span>. Dans ces conditions, à chaque co-création, la masse monétaire augmente d'un facteur <span class="growth ParamLink">c</span>. Autrement dit, si <span class="growth ParamLink">c</span> vaut 10&nbsp;% par an, la <span class="monetarySupply">masse monétaire</span> augmente de 10&nbsp;% par an. Et il en va de même avec le DU annuel&nbsp;: il augmente de 10&nbsp;% chaque année. Ce qui correspond à la formule&nbsp;: <span class="dividend">DU(t)</span> = (1+<span class="growth ParamLink">c</span>)*<span class="dividend">DU(t-1)</span>.</p>
+
+                            <p>Ayant noté cette propriété remarquable en régime à <span class="headcount">N</span> constant, il est intéressant d'en faire une formule de calcul du <span class="dividend">DU</span> et d'en étudier le comportement quand <span class="headcount">N</span> n'est pas constant.</p>
+
+                        </div>
+                        <div class="Comment" id="UDCComment">
+                            <p>La formule DUB ne faisant pas intervenir <span class="headcount">N</span>, le <span class="dividend">DU</span> ne dépend pas des variations de <span class="headcount">N</span>. Ce manque de réactivité peut être considéré comme un problème. Pour y pallier, une possibilité est de faire intervenir <span class="headcount">N</span> en mixant la formule du DU<sub>basique</sub> avec celle de DUB. On obtient alors la formule&nbsp;:</p>
+
+                            <p>DUC = 1/2 [DU<sub>basique</sub>&nbsp;+&nbsp;DUB]</p>
+
+                            <p>Soit&nbsp;:</p>
+
+                            <p><span class="dividend">DU(t)</span> = 1/2 [<span class="growth ParamLink">c</span>*<span class="monetarySupply">M(t)</span>/<span class="headcount">N(t)</span>&nbsp;+&nbsp;(1+<span class="growth ParamLink">c</span>)*<span class="dividend">DU(t-1)</span>]</p>
+
+                        </div>
+                        <div class="Comment" id="UDGComment">
+                            <p>Précédemment, on a vu DUC qui était construite en mixant DU<sub>basique</sub> et DUB. DUĞ peut être vue comme une autre façon de les mixer&nbsp;:</p>
+
+                            <p>Avec DUB, on a <span class="dividend">DU(t)</span> = (1+<span class="growth ParamLink">c</span>)*<span class="dividend">DU(t-1)</span> ou dit autrement <span class="dividend">DU(t)</span> = <span class="dividend">DU(t-1)</span>&nbsp;+&nbsp;<span class="growth ParamLink">c</span>*<span class="dividend">DU(t-1)</span></p>
+                            
+                            <p>Avec DU<sub>basique</sub> , on a <span class="dividend">DU(t-1)</span> = <span class="growth ParamLink">c</span>*<span class="monetarySupply">M(t-1)</span>/<span class="headcount">N(t-1)</span></p>
+
+                            <p>En mixant les deux, on a <span class="dividend">DU(t)</span> = <span class="dividend">DU(t-1)</span>&nbsp;+&nbsp;<span class="growth ParamLink">c</span>*<span class="growth ParamLink">c</span>*<span class="monetarySupply">M(t-1)</span>/<span class="headcount">N(t-1)</span></p>
+
+                        </div>
+                        
+                        <!-- Reference Tab Comments -->
+                        <div class="Comment" id="ReferenceTabComment">
+                            <p>Par défaut, les axes verticaux des graphes qui représentent des montants sont exprimés en unités monétaires. On dit alors que l'on utilise l'unité monétaire comme référence des mesures. Mais on peut vouloir utiliser d'autres référentiels. Par exemple, il est courant de compter en nombre de salaires&nbsp;: "Telle chose coûte 3 fois mon salaire mensuel".</p>
+
+                            <p>Cette application permet l'utilisation de quelques référentiels permettant de mettre en évidence différents aspects.</p>
+
+                        </div>
+                        <div class="Comment" id="monetaryUnitRefComment">
+                            <p>Dans ce référentiel "Unité Monétaire", les axes verticaux des graphes qui représentent des montants sont exprimés en unités monétaires.</p>
+
+                        </div>
+                        <div class="Comment" id="LogScaleComment">
+                            <p>En utilisant cette case à cocher, les axes verticaux des graphes qui représentent des montants utilisent une unité logarithmique de base 10&nbsp;: deux graduations dont le rapport vaut 10 sont à distance constante.</p>
+                            
+                            <p>En utilisant une unité logarithmique, les courbes qui évoluent de façon exponentielle apparaissent comme des droites.</p>
+
+                        </div>
+                        <div class="Comment" id="dividendRefComment">
+                            <p>Dans ce référentiel "Dividende", les axes verticaux des graphes qui représentent des montants sont exprimés en nombre de dividendes.</p>
+
+                            <p>Très logiquement, dans ce référentiel, la courbe représentant les variations au fil du temps du Dividende Universel est peu informative&nbsp;: toutes les valeurs valent 1 et constituent un segment horizontal.</p>
+
+                        </div>
+                        <div class="Comment" id="averageRefComment">
+                            <p>Dans ce référentiel "%(M/N)", les axes verticaux des graphes qui représentent des montants sont exprimés en pourcentage de la masse monétaire moyenne.</p>
+
+                            <p>Très logiquement, dans ce référentiel, la courbe représentant les variations au fil du temps de la masse monétaire moyenne est peu informative&nbsp;: toutes les valeurs valent 100 et constituent un segment horizontal.</p>
+
+                        </div>
+                        
+                        <!-- Display Tab Comments -->
+                        <div class="Comment" id="DisplayTabComment">
+                            <p>Cet onglet permet de régler différents attributs purement visuels.</p>
+
+                            <p>Suivant ce que l'on veut étudier, il peut être intéressant de réduire l'affichage à une petite période, ou au contraire, de l'élargir à une plus grande période. Cet onglet permet donc de positionner les bornes inférieures et supérieures de l'axe horizontal des graphes (axes des temps).</p>
+
+                            <p>Il est par ailleurs possible de dessiner les courbes de différentes façons en spécifiant le type de lien entre les points (lien direct ou en escalier).</p>
+
+                        </div>
+                        <div class="Comment" id="TimeLowerBoundComment">
+                            <p>Dans cette application, la monnaie démarre en 2000. Sur les graphes, les axes horizontaux ont donc par défaut 2000 comme borne inférieure. Cette borne peut être ajustée grâce à ce champ. La valeur maximale autorisée est 2199.</p>
+
+                            <p>A noter&nbsp;: quand la période étudiée est "petite" (par rapport à l'<span class="LifeExpectancy ParamLink">espérance de vie</span>), le <span class="referenceTabLink">référentiel</span> "Unité monétaire" reste praticable&nbsp;; quand la période étudiée devient grande, mieux vaut utiliser un autre <span class="referenceTabLink">référentiel</span>, ou passer en échelle logarithmique.</p>
+
+                        </div>
+                        
+                        <div class="Comment" id="TimeUpperBoundComment">
+                            <p>Dans cette application, la monnaie démarre en 2000. Sur les graphes, les axes horizontaux ont par défaut 2005 comme borne supérieure. Cette borne peut être ajustée grâce à ce champ.</p>
+
+                            <p>A noter&nbsp;: quand la période étudiée est "petite" (par rapport à l'<span class="LifeExpectancy ParamLink">espérance de vie</span>), le <span class="referenceTabLink">référentiel</span> "Unité monétaire" reste praticable&nbsp;; quand la période étudiée devient grande, mieux vaut utiliser un autre <span class="referenceTabLink">référentiel</span>, ou passer en échelle logarithmique.</p>
+
+                        </div>
+                        
+                        <div class="Comment" id="StepCurvesComment">
+                            <p>En utilisant cette case à cocher, les courbes apparaissent constantes par palier.</p>
+                            
+                            <p>Illustration&nbsp;: quand la co-création monétaire est annuelle, des points sont calculés pour chaque année&nbsp;; en traçant des lignes reliant ces points, cela forme des courbes. Ces segments qui relient tous ces points permettent de mieux visualiser les variations mais ils peuvent être trompeurs. Par exemple, ces segments peuvent laissés penser qu'au bout d'un mois, un compte (exprimé en unité monétaire) a changé. En cochant cette case "Courbes en escalier", on se rend compte que ce n'est pas le cas.</p>
+                            
+                        </div>
+
+                        <!-- Accounts Tab Comments -->
+                        <div class="Comment" id="AccountsTabComment">
+                            <p>Par défaut, dans cette application, seul un compte est défini. Cet onglet permet d'ajouter d'autres individus et de leur affecter certains attributs (date d'entrée, co-créateur ou non, montant au départ) afin d'étudier les caractéristiques de leur compte au fil du temps. Ils seront alors représentés dans le premier graphe (en haut à gauche).</p>
+
+                        </div>
+                        <div class="Comment" id="AccountBirthComment">
+                            <p>Ce champ permet d'indiquer la date de création du compte couramment sélectionné. On peut voir cette valeur comme la date de naissance de l'individu possédant ce compte.</p>
+
+                        </div>
+                        <div class="Comment" id="TypeSelectorComment">
+                            <p>Cette liste déroulante permet de choisir entre trois possibilités pour que le compte couramment sélectionné corresponde à &nbsp;: 
+                            <ul>
+                                <li>soit un co-producteur de la monnaie&nbsp;;</li>
+                                <li>soit un non-producteur de la monnaie qui est à comptabiliser lors du calcul de <span class="headcount">N</span> (utile par exemple pour des <span class="configLink c3UBI">configurations</span> étudiants des solutions "à masse monétaire constante"&nbsp;;</li>
+                                <li>soit un non-producteur de la monnaie qui n'est pas à comptabiliser lors du calcul de <span class="headcount">N</span> (par exemple parce qu'il représente une caisse commune).</li>
+                            </ul>
+                            </p>
+
+                        </div>
+                        <div class="Comment" id="StartingPercentageComment">
+                            <p>A chaque individu peut être attribué un montant à la naissance. Ce montant est spécifié via un pourcentage&nbsp;: 
+                                <ul>
+                                    <li>
+                                        après le démarrage de la monnaie, c'est un pourcentage de la répartition moyenne <span class="average">M/N</span> (après émission d'un éventuel DU)&nbsp;;
+                                    </li>
+                                    <li>
+                                        au moment particulier du démarrage de la monnaie, c'est un pourcentage de <span class="UD0 ParamLink">DU0</span>/<span class="growth ParamLink">c</span>.
+                                    </li>
+                                </ul>
+                                Si l'on veut reproduire le cas d'une <span class="StartingPercentage ParamLink">monnaie pleine</span> (population "stable" depuis plusieurs générations) comme présenté dans <a href="LaTrmEnCouleur.html">La TRM en Couleur</a>, on peut le faire en positionnant ce montant à 100&nbsp;%.
+                            </p>
+
+                        </div>
+                        
+                        <!-- Demography Tab Comments -->
+                        <div class="Comment" id="DemographyTabComment">
+                            <p>Dans l'onglet <span class="accountsTabLink">Comptes</span>, on a pu faire varier le <span class="headcount">nombre d'individus N</span> au fil du temps. Cet onglet permet de spécifier des variations de N à plus grande échelle. Comment&nbsp;? Il permet d'ajouter des co-créateurs de la monnaie en spécifiant leur nombre au fil du temps via des profils paramétrables (forme, amplitude maximale de la variation, etc.).</p>
+
+                        </div>
+                        <div class="Comment" id="MaxDemographyComment">
+                            <p>Valeur maximum de la population qui est ciblée par ce profil.</p>
+
+                        </div>
+                        
+                        <div class="Comment" id="xMinDemographyComment">
+                            <p>Moment où débute ce profil.</p>
+
+                        </div>
+                        
+                        <div class="Comment" id="xMaxDemographyComment">
+                            <p>Moment où se finit ce profil.</p>
+
+                        </div>
+                        
+                        <div class="Comment" id="xMpvDemographyComment">
+                            <p>Moment où ce profil atteint son maximum.</p>
+
+                        </div>
+                        
+                        <div class="Comment" id="plateauDemographyComment">
+                            <p>Durée pendant laquelle ce profil est à son maximum.</p>
+
+                        </div>
+                        
+                        <div class="Comment" id="xScaleDemographyComment">
+                            <p>Paramètre régissant l'étalement temporel de ce profil.</p>
+
+                        </div>
+                        
+                        <!-- Demography Laws Comments -->
+                        <div class="Comment" id="NoneComment">
+                            <p>Il peut être utile de n'attribuer aucun profil démographique. Dans ce cas, la courbe affichant les variations de N est uniquement déduite des comptes qui sont définis dans l'onglet <span class="accountsTabLink">Comptes</span>.</p>
+
+                        </div>
+                        <div class="Comment" id="TriangularComment">
+                            <p>Ce profil permet de simuler une croissance linéaire suivie d'une décroissance linéaire de la population.</p>
+
+                        </div>
+                        <div class="Comment" id="PlateauComment">
+                            <p>Ce profil permet de simuler une démographie stable. Cette période de stabilité est appelée "plateau" et elle est précédée d'une croissance linéaire puis suivie d'une décroissance linéaire qui plus où moins aiguës.</p>
+
+                        </div>
+                        <div class="Comment" id="CauchyComment">
+                            <p>Ce profil en forme de cloche permet de simuler une croissance suivie d'une décroissance de la population. Il ressemble au profil triangulaire, mais se veut plus réaliste.</p>
+
+                        </div>
+                        <div class="Comment" id="DampedWaveComment">
+                            <p>Ce profil permet de simuler une croissance suivie d'une phase de fluctuations tendant vers une population stable.</p>
+                        </div>
+                        
+                        <div class="Comment" id="SigmoidComment">
+                            <p>Ce profil permet de simuler une croissance vers un maximum qui se divise en deux phases&nbsp;: dans la première, la croissance est de plus en plus grande, puis dans la seconde, la croissance est de moins en moins grande et tend vers une population stable.</p>
+                        </div>
+                        
+                        <!-- Transactions Tab Comments -->
+                        <div class="Comment" id="TransactionsTabComment">
+                            <p>Cet onglet permet de simuler des transferts de monnaie d'un compte à un autre. Cela peut aider à mettre les comptes dans des états intéressants à étudier, mais des utilisations plus avancée peuvent être faites.</p>
+
+                            <p><strong>Note</strong>&nbsp;: les transactions sont effectuées dans l'ordre de leur numéro, cela peut avoir son importance.</p>
+
+                            <p><strong>Note</strong>&nbsp;: une transaction possède une origine et une destination. Première possibilité, origine et destination correspondent chacune à un unique compte. Deuxième possibilité, l'origine est égale à "Tous", la transaction est alors multiple&nbsp;: elle a lieu vers un unique compte destinataire, mais depuis tous les autres comptes. Troisième possibilité, la destination est égale à "Tous", la transaction est là aussi multiple&nbsp;: elle a lieu depuis un unique compte source vers tous les autres comptes. A noter que le montant indiqué par l'utilisateur pour la transaction est alors divisé à parts égales entre chaque destinataire.</p>
+
+                        </div>
+                        <div class="Comment" id="TransactionYearComment">
+                            <p>Ce champ permet d'indiquer l'année à laquelle la transaction couramment sélectionnée doit être réalisée.</p>
+
+                        </div>
+                        <div class="Comment" id="TransactionRepComment">
+                            <p>Ce champ permet de répéter la transaction plusieurs pas de temps de suite (pas de temps qui correspond au rythme choisi pour l'émission du DU).</p>
+
+                        </div>
+                        <div class="Comment" id="TransactionAmountComment">
+                            <p>Ce champ permet d'indiquer le montant de la transaction couramment sélectionnée. L'unité de ce montant est par défaut l'unité monétaire mais elle peut être modifiée grâce à la liste déroulante qui suit ce champ.</p>
+
+                            <p>A noter que si la transaction ne peut être effectuée, par exemple parce que l'un des comptes est non existant à la date donnée, la transaction est simplement ignorée. Par contre, si la date est valide pour les deux comptes mais que le compte à débiter n'est pas solvable, la transaction sera partiellement réalisée, de façon à amener le compte à débiter à zéro (un "zéro" très temporaire si le compte correspond à un co-créateur de monnaie).</p>
+                                                        
+                        </div>
+                        
+                    </div>
+
+                </div>
+                
+                <div id="ChartsPart">
+                    <div id="AccountsChart" class="chart"></div>
+                    <div id="DividendChart" class="chart"></div>
+                    <div id="HeadcountChart" class="chart"></div>
+                    <div id="MonetarySupplyChart" class="chart"></div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript sources -->
+    <script type="application/javascript" src="js/d3.v4.min.js"></script>
+    <script type="application/javascript" src="js/trmEnTransition/myc3.js"></script>
+    <script type="application/javascript" src="js/lz-string.min.js"></script>
+    <script type="application/javascript" src="js/trmEnTransition/trm.js"></script>
+    <script type="application/javascript" src="js/trmEnTransition/configurations.js"></script>
+    <script type="application/javascript" src="js/trmEnTransition/trmEnTransition.js"></script>
+
+</body>
+</html>

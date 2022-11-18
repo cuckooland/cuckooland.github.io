@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8" />
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+		<meta name="description" content="The Libre Currency Meetings is a bi-annual event with one day dedicated to deepening the notion of libre currency." />
+		<meta name="keywords" content="Libre Currency, Meetings, Yoland Bresson Module, D3.js" />
+        <link rel="stylesheet" type="text/css" href="css/index-style.css" />
+        <link rel="stylesheet" type="text/css" href="css/colorbrewer.css">
+        <link rel="stylesheet" type="text/css" href="css/YolandBresson.css">
+    
+        <!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<title>For 'Yoland Bresson' module — In Cloud Cuckoo Land</title>
+
+		<meta property="og:locale" content="en_EN" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="For 'Yoland Bresson' module" />
+		<meta property="og:description" content="The Libre Currency Meetings is a bi-annual event with one day dedicated to deepening the notion of libre currency." />
+		<meta property="og:url" content="http://cuckooland.free.fr/ForYolandBressonModule.html" />
+		<meta property="og:site_name" content="In Cloud Cuckoo Land" />
+		<meta property="og:image" content="http://cuckooland.free.fr/og-images/ForYolandBressonModule.png" />
+		<meta property="og:image:secure_url" content="http://cuckooland.free.fr/og-images/ForYolandBressonModule.png" />
+		<meta property="og:image:width" content="953" />
+		<meta property="og:image:height" content="870" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:description" content="The Libre Currency Meetings is a bi-annual event with one day dedicated to deepening the notion of libre currency." />
+		<meta name="twitter:title" content="For 'Yoland Bresson' module" />
+		<meta name="twitter:image" content="http://cuckooland.free.fr/og-images/ForYolandBressonModule.png" />
+		
+		<link rel="icon" href="images/favicon.ico" />
+		
+        <script src="js/d3.v4.min.js"></script>
+	</head>
+
+    <script type="text/javascript">function contact(t,c){document.write('<a class="contact" href=mailto:'+t+"@"+c+">Contact</a>")}</script>
+    
+    <!--[if IE 6 ]><body class="ie6 old_ie"><![endif]-->
+    <!--[if IE 7 ]><body class="ie7 old_ie"><![endif]-->
+    <!--[if IE 8 ]><body class="ie8"><![endif]-->
+    <!--[if IE 9 ]><body class="ie9"><![endif]-->
+    <!--[if&nbsp;!IE]><!--><body><!--<![endif]-->
+        <div id="bloc_page">
+            <div id="header">
+                <div id="headerTitle">
+					<a href="index.html" id="cuckoolandImage"><img src="images/CloudCuckooLand.png" alt="In Cloud Cuckoo Land" /></a>
+                </div>
+                
+                <div id="nav">
+                    <ul>
+						<li><a href="BoxingUBI.html">Boxing Universal Basic income</a></li>
+						<li><a href="contents.html">Contents</a></li>
+						<li><a href="reveal/LibreCurrencyInAFifthOfATime.html">Libre Currency in a fifth of a time</a></li>
+                        <li><script type="text/javascript">contact("cuckooland","free.fr");</script></li>
+                    </ul>
+                </div>
+            </div>
+			
+            <div id="section">
+
+                <div id="article">
+			
+                <h1>For 'Yoland Bresson' module <span class="otherVersion">(original&nbsp;version&nbsp;<a href="PourLeModuleYolandBresson.html">here</a>)</span>
+                </h1>
+					
+                <p class="introduction">The <a href="http://rml.creationmonetaire.info">Libre Currency Meetings</a> is a bi-annual event with one day dedicated to deepening the notion of libre currency. One of the workshops, called <a href="https://blog.jytou.fr/2019/05/25/my-yolland-bresson-module-part-1/">'Yoland Bresson' module</a>, requires the production of animated graphs that discourages many. So why not code these animations using <a href="https://d3js.org">D3.js</a>? The result is presented in this page and is intended to be easily reusable.
+                </p>
+					
+                <h3>Average price per square meter of old apartments in Ile de France</h3>
+                    
+                <div class="date_player">
+                    <label for="iDateSelect">Date</label> <select id="iDateSelect" class="idf dateSelect"></select>
+                    <input id="iStart" class="start iDateSelect" type="button" value="Start">
+                </div>
+        
+                <div>
+                    <div class="refSection">
+                        <label for="iRefSelect1">Reference</label> <select id="iRefSelect1" class="idf refSelect"></select>
+                    </div>
+
+                    <div id="iMap1" class="box map idf iDateSelect iRefSelect1">
+                    </div>
+                    <div id="iChart1" class="box chart idf iDateSelect iRefSelect1">
+                    </div>
+                </div>
+        
+                <div>
+                    <div class="refSection">
+                        <label for="iRefSelect2">Reference</label> <select id="iRefSelect2" class="idf refSelect"></select>
+                    </div>
+
+                    <div id="iMap2" class="box map idf iDateSelect iRefSelect2">
+                    </div>
+                    <div id="iChart2" class="box chart idf iDateSelect iRefSelect2">
+                    </div>
+                </div>
+                    
+                <p>In the 'Yoland Bresson' module, different data must be retrieved and entered in tables in order to be analyzed in a spreadsheet:
+                </p>
+					
+                <ul>
+                    <li> <a href="https://or.fr/cours/or/eur">price of gold in dollar</a></li>
+                    <li> <a href="https://or.fr/cours/argent/eur">price of silver in dollar</a></li>
+                    <li> <a href="https://fxtop.com/fr/historique-taux-change.php?YA=1&C1=EUR&C2=USD&A=1&YYYY1=1990&MM1=01&DD1=01&YYYY2=2016&MM2=05&DD2=10&LANG=fr">exchange rate euro/dollar</a></li>
+                    <li> <a href="https://www.ecb.europa.eu/press/pr/stats/md/html/index.en.html">evolution of euro money supply (known as 'M3')</a></li>
+                    <li> <a href="https://fr.wikipedia.org/wiki/Revenu_de_solidarit%C3%A9_active#.C3.89volution_du_montant">evolution of RMI/RSA (welfare)</a></li>
+                    <li> <a href="https://www.base-bien.com/PNSPublic/DocPublic/Historiquedesprixdesappartementspardep.pdf">average price per square meter of old apartments in Ile de France</a></li>
+                </ul>
+                    
+                <p>Once in the spreadsheet, this data can easily be formatted and exported in <a href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> format to get a file of the following form:
+                </p>
+					
+                <textarea name="textarea" class="csvContent idf" readonly wrap="off" rows="15" cols="130"></textarea>
+                    
+                <p>What's in this file?
+                </p>
+					
+                <ul>
+                    <li> The first line contains the names of the columns in the table; from the third column, these are only dates in the format "day/month/year";</li>
+                    <li> on each line starting from the second, amounts are expressed in euro, with one amount per date;</li>
+                    <li> the beginning of each line indicates the name of the expressed values (price, mass, income, etc.);</li>
+                    <li> the second element of each line indicates the number of the considered department; it is left empty when the line does not correspond to a department.</li>
+                </ul>
+                    
+                <p>It is up to each person to modify the values of this file. Some will consider a specific type of average or interpolation, they will then have different results (probably negligible). Others will add new lines (for the price of a load of bread, for example). A testable version can be retrieved <a href="SharedFiles/ColorMap.zip">here</a> as a compressed archive. By opening the file "index.html" in a browser, interactive graphs, quite similar to those presented above, should be displayed. By opening this file with a text editor, you can see that the code just describs the general layout of the document. In fact, all the details are added dynamically, via the javascript code which exploits the contents of the CSV file (found in "data/YolandBresson-Idf-en.csv").
+                </p>
+				
+                <p>This code is also available <a href="http://bl.ocks.org/cuckooland/4d10d67c71eb3d108e6b72b4a32d8175">here</a> as a <a href="https://bl.ocks.org/-/about">blocks</a>.
+                </p>
+					
+                <h3>Average price per square meter of new housing in France's metropolitan regions</h3>
+
+                <div class="date_player">
+                    <label for="rDateSelect">Date : </label> <select id="rDateSelect" class="region dateSelect"></select>
+                    <input id="rStart" class="start rDateSelect" type="button" value="Strat">
+                </div>
+
+                <div>
+                    <div class="refSection">
+                        <label for="rRefSelect1">Reference : </label> <select id="rRefSelect1" class="region refSelect"></select>
+                    </div>
+
+                    <div id="rMap1" class="box map region rDateSelect rRefSelect1">
+                    </div>
+                    <div id="rChart1" class="box chart region rDateSelect rRefSelect1">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="refSection">
+                        <label for="rRefSelect2">Reference : </label> <select id="rRefSelect2" class="region refSelect"></select>
+                    </div>
+
+                    <div id="rMap2" class="box map region rDateSelect rRefSelect2">
+                    </div>
+                    <div id="rChart2" class="box chart region rDateSelect rRefSelect2">
+                    </div>
+                </div>
+
+                <p>For this graph, the data comes from the <a href="http://www.stats.environnement.developpement-durable.gouv.fr/Eider/series.do#">Eider database</a>.</p>
+                    
+                <p>Once in the spreadsheet, this data can again be formatted and exported in <a href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> format to obtain a file of the following form:
+                </p>
+                    
+                <textarea name="textarea" class="csvContent region" readonly wrap="off" rows="15" cols="143"></textarea>
+
+                <p>Here too, the CSV file can be customized, it can be found in "data/YolandBresson-Regions-en.csv".. 
+                </p>
+                
+			    </div>
+            </div>
+        </div>
+        <script src="js/YolandBresson.js"></script>
+        <script>
+            build_YB_EN_IDF();
+            build_YB_EN_REG();
+        </script>
+    </body>
+</html>

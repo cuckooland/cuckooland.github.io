@@ -1,0 +1,118 @@
+#section
+{
+    width: 950px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.box.map {
+    width: 472px;
+    height: 386px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.box.chart {
+    width: 450px;
+    height: 386px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.area {
+    stroke: black;
+    stroke-width: .5px;
+}
+
+.area.selected {
+    stroke-width: 2px;
+}
+
+rect.selected {
+    stroke: black;
+    stroke-width: .5px;
+    stroke-dasharray: 4,2,2,2;
+}
+
+.line.faded,
+.legendItem.faded {
+    opacity: 0.1;
+}
+
+div.tooltip {
+    position: absolute;
+    opacity:0.8;
+    z-index:1000;
+    text-align:left;
+    border-radius:4px;
+    padding:8px;
+    color:#fff;
+    background-color:#000;
+    font: 12px sans-serif;
+    max-width: 300px;
+    height: 40px;
+    pointer-events: none;
+}
+
+#svg {
+    display: block;
+    margin: auto;
+}
+
+.date_player {
+    margin-bottom: 1em;
+}
+
+.dateLabel {
+    font: 15px "Helvetica Neue";
+    fill: #000055;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+}
+
+.xLocLine,
+.yLocLine {
+    stroke-width: 0.2;
+    stroke: #000;
+    stroke-dasharray: 4,2,2,2;
+}
+
+.xDragLine {
+    stroke-width: 3;
+    stroke: #777;
+    cursor: col-resize;
+    opacity: 0;
+}
+
+.xDragLine.dragged {
+    opacity: 0.1;
+}
+
+.legend {
+    margin-left:40px;
+}
+
+.legendItem {
+    float:left;
+    margin-right:1em;
+    font: 0.7em "Helvetica Neue";
+    cursor: default;
+}
+
+.csvContent {
+    margin-left:10px;
+    margin-top:10px;
+    margin-bottom:10px;
+}

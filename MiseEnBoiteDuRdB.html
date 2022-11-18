@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="utf-8" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<meta name="description" content="Pour déconstruire la question du financement du Revenu de Base, voici une présentation s'appuyant sur des diagrammes animés." />
+	<meta name="keywords" content="Monnaie Libre, Revenu de Base, Dividende Universel, Théorie Relative de la Monnaie, financement" />
+    <title>Mise en boîte du Revenu de Base — In Cloud Cuckoo Land</title>
+    
+	<meta property="og:locale" content="fr_FR" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Mise en boîte du Revenu de Base" />
+	<meta property="og:description" content="Pour déconstruire la question du financement du Revenu de Base, voici une présentation s'appuyant sur des diagrammes animés." />
+	<meta property="og:url" content="http://cuckooland.free.fr/MiseEnBoiteDuRdB.html" />
+	<meta property="og:site_name" content="In Cloud Cuckoo Land" />
+	<meta property="og:image" content="http://cuckooland.free.fr/og-images/MiseEnBoiteDuRdB_DU.png" />
+	<meta property="og:image:secure_url" content="http://cuckooland.free.fr/og-images/MiseEnBoiteDuRdB_DU.png" />
+	<meta property="og:image:width" content="790" />
+	<meta property="og:image:height" content="612" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:description" content="Pour déconstruire la question du financement du Revenu de Base, voici une présentation s'appuyant sur des diagrammes animés." />
+	<meta name="twitter:title" content="Mise en boîte du Revenu de Base" />
+	<meta name="twitter:image" content="http://cuckooland.free.fr/og-images/MiseEnBoiteDuRdB_DU.png" />
+	
+	<link rel="stylesheet" type="text/css" href="css/MiseEnBoiteDuRdB.css" />
+    <link rel="stylesheet" type="text/css" href="css/index-style.css" />
+
+	<link rel="icon" href="images/favicon.ico" />
+  </head>
+
+	<!--[if IE 6 ]><body class="ie6 old_ie"><![endif]-->
+	<!--[if IE 7 ]><body class="ie7 old_ie"><![endif]-->
+	<!--[if IE 8 ]><body class="ie8"><![endif]-->
+	<!--[if IE 9 ]><body class="ie9"><![endif]-->
+	<!--[if !IE]><!--><body><!--<![endif]-->
+	
+  <script type="text/javascript">function contact(t,c){document.write('<a class="contact" href=mailto:'+t+"@"+c+">Contact</a>")}</script>
+
+		<div id="bloc_page">
+			<div id="header">
+				<div id="headerTitle">
+					<a href="index.html" id="cuckoolandImage"><img src="images/CloudCuckooLand.png" alt="In Cloud Cuckoo Land" /></a>
+				</div>
+				
+                <div id="nav">
+					<ul>
+                        <li><a href="LaTrmPourLesEnfants.html">La TRM pour les enfants</a></li>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="BouéeDeBaseContreMolletsLibres.html">Bouée de Base contre Mollets Libres</a></li>
+						<li><script type="text/javascript">contact("cuckooland","free.fr");</script></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div id="section">
+  
+              <div id="article">
+			
+				<h1>Mise en boîte du Revenu de Base <span class="pub-date">11/2016</span> <span class="otherVersion">(disponible&nbsp;en&nbsp;anglais&nbsp;<a href="BoxingUBI.html">ici</a>)</span>
+				</h1>
+                
+                <h2>Introduction</h2>
+                
+                    <p>Les monnaies des banques… pour en avoir, certains vendent ou hypothèquent leurs biens, d'autres se font salarier… Mais qui a créé ces monnaies<span class="footnote"><a href="#Laborde" id="fn_Laborde">1</a></span>&nbsp;? Et plus important, comment devraient-elles être créées dans un souci d'équité&nbsp;? Beaucoup rejettent ces questions. Est-ce de l'ignorance, de la complaisance, de la résignation&nbsp;? Cela cache-t-il un goût pour l'autoritarisme&nbsp;?</p>
+				    
+                    <p>Ce billet veut plus particulièrement mettre en évidence l'absurdité de la question du «&nbsp;financement&nbsp;» du Revenu de Base<span class="footnote"><a href="#RBI" id="fn_RBI">3</a></span>. Il prend la forme d'une suite de diagrammes (qui devraient se suffire à eux-mêmes bien qu'ils soient accompagnés de commentaires)&nbsp;:</p>
+          
+			        <ul>
+			        <li>La liste déroulante permet de passer d'un diagramme à un autre.</li>
+			        <li>Des bulles d'informations sont affichées quand le pointeur survole les différentes parties du diagramme (ou quand on les touche sur un écran tactile).</li>
+			        <li><span class="interlude">«&nbsp;Un diagramme de Sankey ou diagramme Sankey est un type de diagramme de flux, dans lequel la largeur des flèches est proportionnelle au flux représenté. Le diagramme de Sankey est utilisé en particulier pour visualiser les transferts énergétiques, les coûts ou les pertes engendrés par un processus.&nbsp;» <a href="https://fr.wikipedia.org/wiki/Franc_fran%C3%A7ais">Extrait Wikipedia</a></span>.</li>
+			        <li>Pour ne pas les alourdir inutilement, les diagrammes font intervenir une communauté réduite à trois membres&nbsp;: Justine, pour représenter ceux qui possèdent une répartition moyenne de la masse monétaire, Amina pour ceux qui sont en dessous, et Liliane pour ceux qui sont au-dessus.</li>
+			        <li>Les premiers diagrammes pourront sembler évidents, voire inappropriés, pour autant j'espère qu'ils aideront le plus grand nombre à progresser dans la compréhension du sujet.</li>
+			        </ul>
+                    
+	                <div id="PresentationZone">
+	                <p class="chart" id="sankeyChart"></p>
+	          
+	                <div id="CommentZone">
+	                <div class="chartComment" id="noExch1">
+	                  <h2>Échanges équilibrés</h2>
+	              
+                      <img src="images/EchangesEquilibres.png" alt="Échanges équilibrés" class="imageWhenNoJS" />
+    					
+	                <p>Vision des échanges effectués entre les trois membres de la communauté. Le compte de chacun reste inchangé entre l'année 1 et l'année 2&nbsp;: pour faciliter les études, nous nous placerons toujours dans ce cas particulier où les échanges sont globalement équilibrés.
+				      		</p>
+	          
+	                </div>
+					
+	                <div class="tooltip" id="exch1Comment">
+						<p><span class="value">100 F</span>&nbsp;: transfert</p>
+						<ul>
+						<li><span class="secondComment">en provenance de <span class="sourceDesc">Amina</span></span></li>
+						<li><span class="secondComment">à destination de <span class="targetDesc">Justine</span></span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="solde1Comment">
+						<p><span class="value">50 F</span>&nbsp;: montant non échangé par <span class="sourceDesc">Amina</span></p>
+	                </div>
+	              
+	                <div class="tooltip" id="noExch1_Ia1">
+						<p><span class="value">150 F</span>&nbsp;: montant que possède <span class="nodeDesc">Amina</span> en début d'année 1</p>
+	                </div>
+	              
+	                <div class="tooltip" id="noExch1_Ia2">
+						<p><span class="value">150 F</span>&nbsp;: montant que possède <span class="nodeDesc">Amina</span> en fin d'année 1</p>
+	                </div>
+	              
+	                <div class="chartComment" id="noExch2">
+	                  <h2>Echanges équilibrés (version simplifiée)</h2>
+	
+                      <img src="images/EchangesEquilibresSimples.png" alt="Echanges équilibrés (version simplifiée)" class="imageWhenNoJS" />
+                      
+	                <p>Amélioration de la lisibilité du cas particulier où les échanges sont globalement équilibrés&nbsp;: nous ne voyons plus les mouvements effectués entre chaque membre durant l'année. Cette méthode de représentation sera reprise dans les diagrammes suivants, ce qui en simplifiera l'étude. 
+				      		</p>
+	          
+	                </div>
+	              
+	                <div class="tooltip" id="noExch2Comment">
+						<p><span class="value">150 F</span>&nbsp;: montant restant à <span class="sourceDesc">Amina</span> après une année d'échange</p>
+	                </div>
+	              
+	                <div class="tooltip" id="noExch2_Ia1">
+						<p><span class="value">150 F</span>&nbsp;: montant que possède <span class="nodeDesc">Amina</span> en début d'année 1</p>
+	                </div>
+	              
+	                <div class="tooltip" id="noExch2_Ia2">
+						<p><span class="value">150 F</span>&nbsp;: montant que possède <span class="nodeDesc">Amina</span> en fin d'année 1</p>
+	                </div>
+	              
+	                <div class="chartComment" id="nvFranc">
+	                  <h2>Passage de l’ancien au nouveau franc</h2>
+	                  
+                      <img src="images/AcNvFranc.png" alt="Passage de l’ancien au nouveau franc" class="imageWhenNoJS" />
+	
+	                  <p class="interlude">«&nbsp;Le 27 décembre 1958 voit l'adoption du Plan Pinay-Rueff qui vise la création du nouveau franc. Appelé <i>nouveau franc</i>, il équivaut à 100 <i>anciens francs</i>&nbsp;; ainsi un produit à 519 (anciens) francs coûtera désormais 5,19 (nouveaux) francs, ou 5 francs et 19 centimes (division par 100).&nbsp;» Extrait Wikipedia - <a href="https://fr.wikipedia.org/wiki/Franc_fran%C3%A7ais">Franc Français</a>.
+					  </p>
+	
+	                  <p>Ici, nous représentons la pensée d'un observateur pour qui le passage au nouveau franc correspond à la disparition de 99&nbsp;% de la monnaie et une énorme déflation des prix. C'est une vision quantitative des choses. Une vision relative à la masse monétaire lui ferait simplement penser&nbsp;: avant le passage au nouveau franc, Amina avait 1/6, Justine avait 1/3 et Liliane avait 1/2&nbsp;; c'est encore le cas après le passage au nouveau franc et les prix sont restés inchangés.
+					  </p>
+	          
+	                  <p class="interlude">«&nbsp;Avec cette réforme, De Gaulle et Pinay restauraient un franc de prestige […]&nbsp;» Extrait Wikipedia  - <a href="https://fr.wikipedia.org/wiki/Franc_fran%C3%A7ais">Franc Français</a>
+					  </p>
+					  
+	                  <p>Ce diagramme permet de voir un type de changement de référentiel (<a href="https://fr.wiktionary.org/wiki/r%C3%A8gle_de_trois">règle de trois</a>) que l'on retrouvera dans la suite. Le but sera, non pas de restaurer un quelconque prestige, mais de faciliter des comparaisons.
+					  </p>
+	          
+	                </div>
+	              
+	                <div class="tooltip" id="nvFrancLinkComment">
+						<p><span class="value">150 F</span>&nbsp;: montant restant à <span class="sourceDesc">Amina</span> après une année d'échange</p>
+						<ul>
+						<li><span class="secondComment">correspond au passage au nouveau franc&nbsp;: <span class="sourceValue">15 000 F</span> / 100</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="ac2nvRemoval">
+						<p><span class="value">14 850 F</span>&nbsp;: montant retiré de la masse monétaire</p>
+						<ul>
+						<li><span class="secondComment">en provenance de <span class="sourceDesc">Amina</span>, soit 99&nbsp;% de <span class="sourceValue">15 000 F</span></span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="nvFranc_I1a1">
+						<p><span class="value">15 000 F</span>&nbsp;: montant que possède <span class="nodeDesc">Amina</span> en début d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit un sixième de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="nvFranc_I2a1">
+						<p><span class="value">30 000 F</span>&nbsp;: montant que possède <span class="nodeDesc">Justine</span> en début d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit un tiers de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="nvFranc_I3a1">
+						<p><span class="value">45 000 F</span>&nbsp;: montant que possède <span class="nodeDesc">Liliane</span> en début d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit la moitié de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="nvFranc_I1a2">
+						<p><span class="value">150 F</span>&nbsp;: montant que possède <span class="nodeDesc">Amina</span> en fin d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit toujours un sixième de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="nvFranc_I2a2">
+						<p><span class="value">300 F</span>&nbsp;: montant que possède <span class="nodeDesc">Justine</span> en fin d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit toujours un tiers de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="nvFranc_I3a2">
+						<p><span class="value">450 F</span>&nbsp;: montant que possède <span class="nodeDesc">Liliane</span> en fin d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit toujours la moitié de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="nvFranc_Di1">
+						<p><span class="value">89 100 F</span>&nbsp;: montant total retiré de la masse monétaire</p>
+						<ul>
+						<li><span class="secondComment">soit 99&nbsp;% de 90&nbsp;000</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="chartComment" id="acFranc">
+	                  <h2>Retour à l’ancien franc</h2>
+	
+                      <img src="images/NvAcFranc.png" alt="Retour à l’ancien franc" class="imageWhenNoJS" />
+	
+	                  <p>Un retour à l'ancien franc peut être vu comme une augmentation de 9&nbsp;900&nbsp;% de la masse monétaire. C'est en fait un changement de référentiel (<a href="https://fr.wiktionary.org/wiki/r%C3%A8gle_de_trois">règle de trois</a>) que mes grands-parents opéraient souvent. «&nbsp;Combien ça fait en ancien franc&nbsp;?&nbsp;» a longtemps été une question très commune. Cela leur permettait de réaliser des comparaisons avec des références du passé. Mais pour ceux qui n'avaient jamais connu l'ancien franc, cela produisait un effet étrange, comme s'il y avait une inflation soudaine de 10&nbsp;000&nbsp;%.
+					  </p>
+	          
+	                  <p>A priori, ce graphe décrit donc un calcul, une expérience de pensée que mes grands-parents réalisaient régulièrement. Mais il pourrait également représenter une véritable réforme restaurant un franc de modestie. A bien des égards, le diagramme qui suit est similaire…
+					  </p>
+	          
+	                </div>
+	              
+	                <div class="tooltip" id="acFrancLinkComment">
+						<p><span class="value">150 F</span>&nbsp;: montant restant à <span class="sourceDesc">Amina</span> après une année d'échange</p>
+						<ul>
+						<li><span class="secondComment">avant retour à l'ancien franc</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="nv2acCreation">
+						<p><span class="value">14 850 F</span>&nbsp;: montant «&nbsp;créé&nbsp;» pour revenir à l'ancien franc</p>
+						<ul>
+						<li><span class="secondComment">à destination de <span class="targetDesc">Amina</span>, soit 99&nbsp;% de <span class="targetValue">15 000 F</span></span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="acFranc_I1a1">
+						<p><span class="value">150 F</span>&nbsp;: montant que possède <span class="nodeDesc">Amina</span> en début d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit un sixième de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="acFranc_I2a1">
+						<p><span class="value">300 F</span>&nbsp;: montant que possède <span class="nodeDesc">Justine</span> en début d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit un tiers de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="acFranc_I3a1">
+						<p><span class="value">450 F</span>&nbsp;: montant que possède <span class="nodeDesc">Liliane</span> en début d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit la moitié de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="acFranc_I1a2">
+						<p><span class="value">15 000 F</span>&nbsp;: montant que possède <span class="nodeDesc">Amina</span> en fin d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit toujours un sixième de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="acFranc_I2a2">
+						<p><span class="value">30 000 F</span>&nbsp;: montant que possède <span class="nodeDesc">Justine</span> en fin d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit toujours un tiers de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="acFranc_I3a2">
+						<p><span class="value">45 000 F</span>&nbsp;: montant que possède <span class="nodeDesc">Liliane</span> en fin d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit toujours la moitié de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="acFranc_Cr1">
+						<p><span class="value">89 100 F</span>&nbsp;: montant «&nbsp;créé&nbsp;» pour revenir à l'ancien franc</p>
+						<ul>
+						<li><span class="secondComment">soit 9900&nbsp;% de 900</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="chartComment" id="duQuant">
+	                  <h2>Dividende Universel via une création monétaire</h2>
+	
+                      <img src="images/DuViaCreationMonetaire.png" alt="Dividende Universel via une création monétaire" class="imageWhenNoJS" />
+	
+	                  <p>Ce graphe ressemble beaucoup à celui du retour à l'ancien franc. Bien sûr, il y a une différence majeure. Dans le cas de l'ancien franc, la part attribuée à un individu est en proportion de ce qu'il avait. Dans le cas du Dividende Universel (abrégé DU), la part attribuée à un individu est la même pour tous&nbsp;: c'est une proportion de la masse monétaire (10 %).
+					  </p>
+	          
+	                  <p>Pour rappel, la Théorie Relative de la Monnaie (abrégée TRM) parle de co-création de monnaie&nbsp;: tout le monde crée une même part d'une même monnaie, et ceci régulièrement dans le temps - l'objectif étant de ne privilégier aucun individu, ni aucune époque. La mise en oeuvre de cette co-création n'est pas un sujet de la TRM. Elle pourrait prendre différentes formes&nbsp;: délégation à une Banque Centrale ou à un système informatique décentralisé type Duniter<span class="footnote"><a href="#Duniter" id="fn_Duniter">2</a></span>. 
+					  </p>
+	          
+	                  <p>On peut imaginer que cette opération de co-création affecte non seulement les comptes, mais aussi tous les prix, comme lors du passage au nouveau franc.
+					  </p>
+	          
+	                </div>
+	              
+	                <div class="tooltip" id="duQuantLinkComment">
+						<p><span class="value">150 F</span>&nbsp;: montant restant à <span class="sourceDesc">Amina</span> après une année d'échange</p>
+	                </div>
+	              
+	                <div class="tooltip" id="du">
+						<p><span class="value">30 F</span>&nbsp;: part du Dividende Universel créée par <span class="targetDesc">Amina</span></p>
+						<ul>
+						<li><span class="secondComment">soit un tiers du Dividende Universel&nbsp;: <span class="sourceValue">90 F</span> / 3</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="duQuant_I1a1">
+						<p><span class="value">150 F</span>&nbsp;: montant que possède <span class="nodeDesc">Amina</span> en début d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit un sixième de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="duQuant_I2a1">
+						<p><span class="value">300 F</span>&nbsp;: montant que possède <span class="nodeDesc">Justine</span> en début d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit un tiers de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="duQuant_I3a1">
+						<p><span class="value">450 F</span>&nbsp;: montant que possède <span class="nodeDesc">Liliane</span> en début d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit la moitié de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="duQuant_I1a2">
+						<p><span class="value">150 F</span>&nbsp;: montant que possède <span class="nodeDesc">Amina</span> en fin d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit maintenant un peu plus d'un sixième de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="duQuant_I2a2">
+						<p><span class="value">300 F</span>&nbsp;: montant que possède <span class="nodeDesc">Justine</span> en fin d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit toujours un tiers de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="duQuant_I3a2">
+						<p><span class="value">450 F</span>&nbsp;: montant que possède <span class="nodeDesc">Liliane</span> en fin d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit maintenant un peu moins de la moitié de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="duQuant_Cr1">
+						<p><span class="value">90 F</span>&nbsp;: monnaie co-créée par la communauté</p>
+						<ul>
+						<li><span class="secondComment">appelée aussi Dividende Universel</span></li>
+						<li><span class="secondComment">représente 10&nbsp;% de la masse monétaire 900&nbsp;F</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="chartComment" id="duRel">
+	                  <h2>Dividende Universel via une création monétaire (vu en masse constante)</h2>
+	              
+                      <img src="images/DiViaCreationMonetaireMc.png" alt="Dividende Universel via une création monétaire (vu en masse constante)" class="imageWhenNoJS" />
+	
+	                  <p>Par rapport au diagramme précédent, un changement de référentiel (<a href="https://fr.wiktionary.org/wiki/r%C3%A8gle_de_trois">règle de trois</a>) est ajouté afin de ramener la masse monétaire à ce qu'elle était avant émission de la nouvelle monnaie. C'est une opération de la pensée très similaire à celle que faisait mes grands-parents.
+					  </p>
+	          
+	                  <p>Bien sûr, ici, le calcul ne correspond pas à un simple décalage de virgule, il nécessite l'utilisation d'une calculatrice. Dans cet exposé, la mise en oeuvre pratique n'est pas le sujet, néanmoins, nous pouvons remarquer ceci&nbsp;: dans le cadre d'une monnaie entièrement numérique, ce type de calcul peut être facilement pris en charge par les logiciels.
+					  </p>
+	          
+	                  <p>Ce changement de référentiel facilite l'étude des effets du DU&nbsp;: certains verront pour Justine une opération neutre&nbsp;; pour Amina, une revalorisation&nbsp;; pour Liliane, une dévalorisation. Il permet également la comparaison avec le diagramme suivant.
+				      </p>
+	          
+	                </div>
+	              
+	                <div class="tooltip" id="toConstantSupply">
+						<p><span class="value">164 F</span>&nbsp;: montant que possède <span class="sourceDesc">Amina</span> en fin d'année 1</p>
+						<ul>
+						<li><span class="secondComment"> suite au retour à la masse monétaire de l'année 1</span></li>
+						<li><span class="secondComment"> soit &nbsp;: <span class="sourceValue">180 F</span> / 990 * 900</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="constantSupplyRem">
+						<p><span class="value">16 F</span>&nbsp;: résidu en provenance de <span class="sourceDesc">Amina</span></p>
+						<ul>
+						<li><span class="secondComment">suite au retour à la masse monétaire de l'année 1</span></li>
+						<li><span class="secondComment">soit <span class="sourceValue">180</span> / 990 * 90</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="duRel_I1a1">
+						<p><span class="value">150 F</span>&nbsp;: montant que possède <span class="nodeDesc">Amina</span> en début d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit un sixième de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="duRel_I2a1">
+						<p><span class="value">300 F</span>&nbsp;: montant que possède <span class="nodeDesc">Justine</span> en début d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit un tiers de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="duRel_I3a1">
+						<p><span class="value">450 F</span>&nbsp;: montant que possède <span class="nodeDesc">Liliane</span> en début d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit la moitié de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="duRel_I1a2">
+						<p><span class="value">180 F</span>&nbsp;: montant que possède <span class="nodeDesc">Amina</span> en fin d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit maintenant un peu plus d'un sixième de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="duRel_I2a2">
+						<p><span class="value">330 F</span>&nbsp;: montant que possède <span class="nodeDesc">Justine</span> en fin d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit toujours un tiers de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="duRel_I3a2">
+						<p><span class="value">480 F</span>&nbsp;: montant que possède <span class="nodeDesc">Liliane</span> en fin d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit maintenant un peu moins de la moitié de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="duRel_I1a2mc">
+						<p><span class="value">164 F</span>&nbsp;: montant que possède <span class="nodeDesc">Amina</span> en fin d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit maintenant un peu plus d'un sixième de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="duRel_I2a2mc">
+						<p><span class="value">300 F</span>&nbsp;: montant que possède <span class="nodeDesc">Justine</span> en fin d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit toujours un tiers de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="duRel_I3a2mc">
+						<p><span class="value">436 F</span>&nbsp;: montant que possède <span class="nodeDesc">Liliane</span> en fin d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit maintenant un peu moins de la moitié de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="duRel_Cr1">
+						<p><span class="value">90 F</span>&nbsp;: monnaie co-créée par la communauté</p>
+						<ul>
+						<li><span class="secondComment">appelée aussi Dividende universel</span></li>
+						<li><span class="secondComment">représente 10&nbsp;% de la masse monétaire de début d'année 1</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="duRel_Di1">
+						<p><span class="value">90 F</span>&nbsp;: résidu issu du retour au référentiel de début d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit 10&nbsp;% de la masse monétaire de début d'année 1</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="chartComment" id="rdb">
+	                  <h2>Revenu de Base via une taxe</h2>
+	
+                      <img src="images/RdbViaTaxe.png" alt="Revenu de Base via une taxe" class="imageWhenNoJS" />
+	
+	                  <p>Intéressons-nous maintenant au «&nbsp;financement&nbsp;» - avec de gros guillemets - d'un Revenu de Base (en abrégé&nbsp;: RdB). Tous les ans, une taxe de 10&nbsp;% est prélevée sur tous les comptes&nbsp;; le résultat de cette taxe est ensuite redistribuée en parts égales à chacun, ce qui constitue le RdB.
+					  </p>
+	          
+	                  <p>Une première chose est frappante&nbsp;: Justine possède un tiers de la masse monétaire, que ce soit avant ou après distribution du Rdb. Mais en étant plus attentif, on remarque mieux&nbsp;: pour Amina et Liliane, les valeurs sont quasiment les mêmes que dans le cas du DU vu en masse constante (voir le diagramme précédent). En fait, cela n'a rien d'une coïncidence, Stéphane Laborde a démontré qu'il y avait mathématiquement parfaite équivalence.
+					  </p>
+          
+	                  <p>Ici, la monnaie n'est pas co-créée par les humains qui l'utilisent, elle est créée par les banques. Alors, est-ce le DU qui cache un financement&nbsp;? Ou est-ce le RdB qui cache une non co-création de la monnaie&nbsp;? Si la réponse ne vous semble pas évidente, la lecture de l'allégorie «&nbsp;<a href="BouéeDeBaseContreMolletsLibres.html">Bouée de Base contre Mollets Libres</a>&nbsp;» vous aidera peut-être.
+					  </p>
+          
+                    </div>
+                
+	                <div class="tooltip" id="rdbLinkComment">
+						<p><span class="value">30 F</span>&nbsp;: distribution à <span class="targetDesc">Amina</span> du RdB</p>
+						<ul>
+						<li><span class="secondComment">en provenance de la <span class="sourceDesc">Caisse</span>, c'est-à-dire <span class="sourceValue">90 F</span> / 3</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="applyTax">
+						<p><span class="value">135 F</span>&nbsp;: montant restant à <span class="sourceDesc">Amina</span> après une année d'échange</p>
+						<ul>
+						<li><span class="secondComment">et après application de la taxe «&nbsp;finançant&nbsp;» le RdB</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="taxAmount">
+						<p><span class="value">15 F</span>&nbsp;: taxe prélevée auprès de <span class="sourceDesc">Amina</span> pour «&nbsp;financer&nbsp;» le RdB</p>
+						<ul>
+						<li><span class="secondComment">soit 10&nbsp;% de <span class="sourceValue">150 F</span></span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="rdb_I1a1">
+						<p><span class="value">150 F</span>&nbsp;: montant que possède <span class="nodeDesc">Amina</span> en début d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit un sixième de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="rdb_I2a1">
+						<p><span class="value">300 F</span>&nbsp;: montant que possède <span class="nodeDesc">Justine</span> en début d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit un tiers de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="rdb_I3a1">
+						<p><span class="value">450 F</span>&nbsp;: montant que possède <span class="nodeDesc">Liliane</span> en début d'année 1</p>
+						<ul>
+						<li><span class="secondComment">soit la moitié de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="rdb_I1a2mc">
+						<p><span class="value">165 F</span>&nbsp;: montant que possède <span class="nodeDesc">Amina</span> en fin d'année 1</p>
+						<ul>
+						<li><span class="secondComment">ce qui représente maintenant plus d'un sixième de la masse monétaire</span></li>
+						<li><span class="secondComment">cette valeur ressemble étrangement à celle obtenue avec le Dividende Universel</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="rdb_I2a2mc">
+						<p><span class="value">300 F</span>&nbsp;: montant que possède <span class="nodeDesc">Justine</span> en fin d'année 1</p>
+						<ul>
+						<li><span class="secondComment">ce qui représente toujours un tiers de la masse monétaire</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="rdb_I3a2mc">
+						<p><span class="value">435 F</span>&nbsp;: montant que possède <span class="nodeDesc">Liliane</span> en fin d'année 1</p>
+						<ul>
+						<li><span class="secondComment">ce qui représente maintenant moins de la moitié de la masse monétaire</span></li>
+						<li><span class="secondComment">cette valeur ressemble étrangement à celle obtenue avec le Dividende Universel</span></li>
+						</ul>
+	                </div>
+	              
+	                <div class="tooltip" id="rdb_Ca1">
+						<p><span class="value">90 F</span>&nbsp;: total des taxes prélevées pour «&nbsp;financer&nbsp;» le RdB</p>
+						<ul>
+						<li><span class="secondComment">soit 10&nbsp;% de la masse monétaire 900&nbsp;F</span></li>
+						</ul>
+	                </div>
+	                </div>  <!--CommentZone-->
+	                </div>  <!--PresentationZone-->
+	              
+              </div> <!--article-->
+          
+                <div id="footnotes">
+					<h1>Notes</h1>
+					<ol>
+					
+						<!-- 1 -->
+						<li id="Laborde"> D'où vient l'argent que prêtent les banques&nbsp;? «&nbsp;Elles le fabriquent elles-mêmes, avec autorisation de la Banque Centrale&nbsp;» –&nbsp;Bernard Marris, membre du conseil général de la Banque de France&nbsp;<a href="#fn_Laborde" title="Retour à l&rsquo;article">↑</a>&nbsp;:<br>
+						<a href="http://www.creationmonetaire.info/2014/04/tout-comprendre-sur-la-monnaie.html">http://www.creationmonetaire.info/2014/04/tout-comprendre-sur-la-monnaie.html</a></li>
+
+						<!-- 2 -->
+						<li id="Duniter"> Dans la monnaie libre, «&nbsp;Tout membre est co-producteur de la monnaie à travers le Dividende Universel&nbsp;»&nbsp;<a href="#fn_Duniter" title="Retour à l&rsquo;article">↑</a>&nbsp;:<br>
+						<a href="https://duniter.org/fr/comprendre/">https://duniter.org/fr/comprendre/</a></li>
+
+						<!-- 3 -->
+						<li id="RBI"> Le Revenu de Base est un revenu versé par une communauté politique à tous ses membres, sur une base individuelle, sans condition de ressources ni obligation de travail&nbsp;<a href="#fn_RBI" title="Retour à l&rsquo;article">↑</a>&nbsp;:<br>
+						<a href="https://fr.wikipedia.org/wiki/Revenu_de_base">https://fr.wikipedia.org/wiki/Revenu_de_base</a></li>
+					</ol>
+                </div>				
+            </div> <!--section-->
+          
+        </div> <!--block_page-->
+      
+        <script src="js/d3.v3.min.js" charset="utf-8"></script>
+        <script src="js/sankey-no-sort.js"></script>
+        <script type="text/javascript" src="js/MiseEnBoiteDuRdB.js"></script>
+
+    </body>
+</html>

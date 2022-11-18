@@ -1,0 +1,54 @@
+.kbd
+{
+    font-family: monospace, Courier;
+    border-width: 0.1em 0.1em 0.2em;
+    border-color: #DDD #BBB #BBB #DDD;
+    border-style: solid;
+    padding: 0.1em 0.3em;
+    white-space: nowrap;
+    background: none repeat scroll 0% 0% #F9F9F9;
+    border-radius: 0.3em;
+}
+
+.citation
+{
+    font-style: italic;
+}
+
+
+table.versions {
+    border-collapse: collapse;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+table.versions td, table.versions th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+table.versions tr:nth-child(even){background-color: #f2f2f2;}
+  
+table.versions th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4ab4d7;
+    color: white;
+}
+
+th.language-header,
+th.thanks-header,
+td.row-header,
+td.thanks-cell {
+	text-align:left;
+}
+
+th.sozi-header,
+th.pdf-header,
+td.sozi-cell,
+td.pdf-cell {
+	text-align:center;
+}
