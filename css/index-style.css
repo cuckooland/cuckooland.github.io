@@ -31,7 +31,7 @@ a
     text-decoration: none;
     color: #760001;
 }
-.preview a, .preview  a:visited
+a .preview, a:visited .preview
 {
     text-decoration: none;
     color: #181818;
@@ -140,9 +140,13 @@ h1
 .pub-date
 {
     font-size: 0.4em;
-	color: #c5c5c5;
+	color: #a5a5a5;
     font-weight: normal;
     font-style: normal;
+}
+.preview h2
+{
+	color: #A07009;
 }
 #article
 {
