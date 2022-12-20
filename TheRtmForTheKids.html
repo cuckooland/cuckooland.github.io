@@ -3,7 +3,7 @@
 	<head>
 		<title>The RTM for the kids — In Cloud Cuckoo Land</title>
         <meta charset="utf-8" />
-        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="title" content="The RTM for the kids">
 		<meta name="description" content="To understand the RTM (Relative Theory of Money), Here is a presentation intended for kids, where the explanation follows the 6 petals of 12 flowers." />
 		<meta name="keywords" content="Libre Currency, RTM, Kids, Relative Theory of Money, Basic income, Sozi Presentation" />
@@ -24,6 +24,7 @@
         <meta property="twitter:title" content="The RTM for the kids" />
         <meta property="twitter:image" content="https://cuckooland.fr/og-images/TheRtmForTheKids-page005.png" />
         
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="css/index-style.css" />
         <link rel="stylesheet" type="text/css" href="css/trm-sozi-style.css" />
         <link rel="stylesheet" type="text/css" href="sliderEngine/style.css" />
@@ -39,25 +40,24 @@
     <!--[if IE 9 ]><body class="ie9"><![endif]-->
     <!--[if !IE]><!--><body><!--<![endif]-->
     
-        <script type="text/javascript">function contact(t,c){document.write('<a class="contact" href=mailto:'+t+"@"+c+">Contact</a>")}</script>
+        <script type="text/javascript">function contact(t,c){document.write('<a class="contact" href=mailto:'+t+"@"+c+'><i class="far fa-envelope"></i> <span class="navtext">Contact</span></a>')}</script>
 	    <script type="text/javascript" src="sliderEngine/jquery.js"></script>
     
+		<div class="header">
+			<a href="index.html" id="cuckoolandImage"><img src="images/CloudCuckooLand.svg" alt="In Cloud Cuckoo Land" /></a>
+		</div>
+		
+		<div id="navbar">
+			<a href="contents.html"><i class="fa-solid fa-house"></i> <span class="navtext">Contents</span></a> 
+			<a href="TheRtmInColor.html"><i class="fa-solid fa-backward-step"></i> <span class="navtext">The RTM in color</span></a> 
+			<a href="BoxingUBI.html"><i class="fa-solid fa-forward-step"></i> <span class="navtext">Boxing Universal Basic Income</span></a> 
+			<div class="navbar-right">
+				<script type="text/javascript">contact("cuckooland","free.fr");</script> 
+				<a href="https://mamot.fr/@cuckooland"><i class="fab fa-mastodon"></i> <span class="navtext">Mastodon</span></a> 
+			</div>
+		</div>
+
         <div id="bloc_page">
-            <div id="header">
-                <div id="headerTitle">
-					<a href="index.html" id="cuckoolandImage"><img src="images/CloudCuckooLand.png" alt="In Cloud Cuckoo Land" /></a>
-                </div>
-                
-                <div id="nav">
-                    <ul>
-                        <li><a href="TheRtmInColor.html">The RTM in color</a></li>
-                        <li><a href="contents.html">Contents</a></li>
-                        <li><a href="BoxingUBI.html">Boxing Universal Basic Income</a></li>
-                        <li><script type="text/javascript">contact("cuckooland","free.fr");</script></li>
-                    </ul>
-                </div>
-            </div>
-			
             <div id="section">
 
                 <div id="article">
@@ -376,5 +376,21 @@
         </div>
         <script type="text/javascript" src="sliderEngine/wowslider.js"></script>
         <script type="text/javascript" src="sliderEngine/script_en.js"></script>
+
+		<script>
+			window.onscroll = function() {myFunction()};
+
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+		</script>
+
     </body>
 </html>

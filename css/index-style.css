@@ -1,271 +1,230 @@
-html 
-{
+html {
     font-size: 100%;
 }
-body
-{
+body {
     background-color: #f0f0ff;
     font-family: 'Trebuchet MS', Arial, sans-serif;
     color: #181818;
-    font-size: 0.875em;
+    font-size: 1rem;
+    overflow-wrap: break-word;
 }
-.guide
-{
-    font-size: 1em;
+.guide {
+    font-size: 1rem;
     font-style: normal;
     font-weight: normal;
 	color: #181818;
     background-color: #B09039;
-    padding: 0.5em 1em 0.5em 1em;
-    border: 0.2em solid #505009;
-    border-radius: 0.5em;
-    box-shadow: 0em 0.2em 0.5em #aaaaaa;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: 0.2rem solid #505009;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0.2rem 0.5rem #aaaaaa;
 }
-a.guide:hover
-{
+a.guide:hover {
     color: #760001;
     background-color: #c9c9c9;
 }
-a
-{
+a {
     text-decoration: none;
     color: #760001;
 }
-a .preview, a:visited .preview
-{
+a .preview, a:visited .preview {
     text-decoration: none;
     color: #181818;
 }
-.preview
-{
-    padding: 0em 1em 0.2em 1em ;
-    margin: 0.5em 0em 0.5em 0em;
-    border: 0.2em solid #FFFFFF;
-    border-radius: 0.5em;
-    box-shadow: 0em 0.2em 0.5em #aaaaaa;
+.preview {
+    padding: 0rem 1rem 0.2rem 1rem ;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+    border: 0.2rem solid #FFFFFF;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0.2rem 0.5rem #aaaaaa;
 }
-.preview:hover
-{
+.preview:hover {
     background-color: #c9c9c9;
 }
-#section
-{
-    width: 50em;
+#section {
+    width: 50rem;
 	max-width: 100%;
     margin: auto;
-    padding: 0.1em;
+    padding: 0.1rem;
 }
-#header
-{
-    display: flex;
-	width: 100%;
-    background: #0084ff;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    z-index: 3000; /* Utile avec Reveal.js */
-    line-height: 0.7;
+body {
+  margin: 0;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
-#headerTitle
-{
-    flex: 1;
-    margin: 0.5vw;
+
+.header {
+  background: #0084ff;
+  padding: 0.5rem;
+  z-index: 3000; /* Utile avec Reveal.js */
 }
-#cc-licence
-{
-    font-size: 0.875vw;
-	margin-right: 0.6vw;
-    color: #363636;
+
+.header img {
+  max-width: 500px;
 }
-#nav
-{
-    display: flex;
-    align-self: flex-end;
-    margin-left: 0.5vw;
-    margin-top: 0.5vw;
-    margin-bottom: 0.2vw;
-    vertical-align: bottom; 
+
+#navbar {
+  overflow: hidden;
+  background-color: #0084ff;
+  z-index: 3000; /* Utile avec Reveal.js */
 }
-#nav ul
-{
-    list-style-type: none;
-	margin-right: 0.1vw;
-	margin-top: 0.1vw;
-    margin-bottom: 0.1vw;
-    padding-left: 0vw;
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #484848;
+  text-align: center;
+  padding: 1rem 1.1rem;
+  text-decoration: none;
+  font-size: 1.1rem;
 }
-#nav li
-{
-    display: inline-block;
-    margin-right: 1vw;
+
+#navbar a:hover {
+  background-color: #00a2ff;
 }
-#nav a
-{
-    font-size: 1vw;
-    color: #ddddff;
-    padding-bottom: 0.3vw;
-    text-decoration: none;
-    text-transform: uppercase;
+
+.navbar-right {
+  float: right;
 }
-#nav a.contact
-{
-    font-size: 1vw;
-    text-decoration: none;
-    text-transform: none;
+
+#bloc_page {
+  padding: 1.5rem;
 }
-#nav a:hover
-{
-    color: #a0a0a0;
-    text-decoration: underline;
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-#cc-licence a
-{
-    color: #760001;
-    font-size: 0.875vw;
-    text-transform: none;
+
+.sticky + #bloc_page {
+  padding-top: 5rem;
 }
-h1
-{
+
+#navbar span.navtext {
+    color: #f2f2f2;
+}
+
+@media screen and (max-width: 800px) {
+    #navbar span.navtext {
+      display: none;
+    }
+  }
+  
+h1 {
 	color: #A07009;
     font-style: italic;
-    font-size: 2.5em;
-	margin-top: 0.8em;
-	margin-bottom: 1em;
+    font-size: 2.2rem;
+	margin-top: 1rem;
+	margin-bottom: 0.8rem;
 }
-.otherVersion
-{
-    font-size: 0.5em;
+.otherVersion {
+    font-size: 0.8rem;
 	color: #181818;
     font-style: italic;
     font-weight: normal;
 }
-.pub-date
-{
-    font-size: 0.4em;
+.pub-date {
+    font-size: 0.8rem;
 	color: #a5a5a5;
     font-weight: normal;
     font-style: normal;
 }
-.preview h2
-{
+.preview h2 {
 	color: #A07009;
 }
-#article
-{
-    margin-bottom: 0.5em;
+#article {
+    margin-bottom: 0.5rem;
 }
-.articleImage
-{
-    position: relative;
-    -moz-box-shadow: 0.4em 0.4em 0.4em #1c1a19;
-    -webkit-box-shadow: 0.4em 0.4em 0.4em #1c1a19;
-    box-shadow: 0.4em 0.4em 0.4em #1c1a19;
-    margin-top: 0.5em;
-    margin-bottom: 1.5em;
-	max-width: 100%;
+.articleImage {
+    -moz-box-shadow: 0.4rem 0.4rem 0.4rem #1c1a19;
+    -webkit-box-shadow: 0.4rem 0.4rem 0.4rem #1c1a19;
+    box-shadow: 0.4rem 0.4rem 0.4rem #1c1a19;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+	width: 100%;
 	height: auto;
 }
-.articleImageWithoutShadow
-{
-    position: relative;
-    margin-top: 0.5em;
-    margin-bottom: 1.5em;
+.articleImageWithoutShadow {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+	width: 100%;
 }
-#footnotes
-{
-    font-size: 0.8em;
+#footnotes {
+    font-size: 1rem;
     font-style: italic;
     background-color: #DFDFE9;
-    padding: 0.1em 0.1em 0.1em 1em;
-    margin-top: 2em;
+    padding: 0.1rem 0.1rem 0.1rem 1rem;
+    margin-top: 2rem;
 }
-#footnotes h1
-{
+#footnotes h1 {
     font-style: italic;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
-#footnotes ol
-{
-    padding-left: 2em;
+#footnotes ol {
+    padding-left: 2rem;
 }
-#footnotes li
-{
-    margin-bottom: 1em;
-    margin-left: 0em;
+#footnotes li {
+    margin-bottom: 1rem;
+    margin-left: 0rem;
 }
-.footnote
-{
-	position: relative; 
-	top: -0.5em; 
-	font-size: 80%;
+.footnote {
+	font-size: 0.8rem;
+    vertical-align: top;
 }
-p.imageCaption
-{
+p.imageCaption {
 	color: #777;
-	font-size:0.8em;
+	font-size:1rem;
 	text-align:center;
     margin: auto;
-    margin-bottom: 3em;
+    margin-bottom: 3rem;
 }
-#article p.imageCaption
-{
+#article p.imageCaption {
 	width: auto;
 }
-.twoImagesTable
-{
+.twoImagesTable {
+    width: 100%;
     text-align: left;
+    table-layout: fixed;
 }
-.twoImagesTable td
-{
+.twoImagesTable td {
 	text-align: center;
-	padding-left: 1em;
-	padding-right: 1em;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
-.twoImagesTable .articleImage
-{
+.twoImagesTable .articleImage {
 	max-width: 100%;
 	height: auto;
 }
-.introduction
-{
+.introduction {
 	font-weight: bold;
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
 }
-#article ul, #footnotes ul
-{
+#article ul, #footnotes ul {
 	list-style-image: url('images/puce.png');
     list-style-type: none; /* on annule la puce par défaut */
-    margin-top: 0.6em;
-    margin-bottom: 0.6em;
-    padding-left: 1.5em; /* pour éviter la superposition du contenu */
-}
-#cuckoolandImage img
-{
-    border: 0;
-    float: left;
-    max-width: 50%;
-    height: auto;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    padding-left: 1.5rem; /* pour éviter la superposition du contenu */
 }
 .interlude {
     width: 90%;
     margin: auto;
     font-style: italic;
 }
-.citation
-{
-    padding-left: 1em;
+.citation {
+    padding-left: 1rem;
     font-style: italic;
 }
-.extract
-{
+.extract {
     font-style: italic;
 }
-p.signature
-{
+p.signature {
 	font-weight: bold;
-	font-size:1.2em;
+	font-size:1.2rem;
 	text-align:center;
     margin: auto;
 }
-p.signature:hover
-{
+p.signature:hover {
     text-decoration: underline;
 }

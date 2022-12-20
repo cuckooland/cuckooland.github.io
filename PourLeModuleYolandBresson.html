@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 	<head>
         <meta charset="utf-8" />
-        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="title" content="Pour le module « Yoland Bresson »">
         <meta name="description" content="Les Rencontres de la Monnaie Libre sont un évènement bi-annuel dont une journée est consacrée à l'approfondissement de la notion de monnaie libre." />
 		<meta name="keywords" content="Rencontres, Monnaie Libre, Module Yoland Bresson, D3.js" />
@@ -23,6 +23,7 @@
         <meta property="twitter:title" content="Pour le module « Yoland Bresson »" />
         <meta property="twitter:image" content="https://cuckooland.fr/og-images/ForYolandBressonModule.png" />
         
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="css/index-style.css" />
         <link rel="stylesheet" type="text/css" href="css/colorbrewer.css">
         <link rel="stylesheet" type="text/css" href="css/YolandBresson.css">
@@ -36,29 +37,28 @@
         <script src="js/d3.v4.min.js"></script>
 	</head>
 
-    <script type="text/javascript">function contact(t,c){document.write('<a class="contact" href=mailto:'+t+"@"+c+">Contact</a>")}</script>
+    <script type="text/javascript">function contact(t,c){document.write('<a class="contact" href=mailto:'+t+"@"+c+'><i class="far fa-envelope"></i> <span class="navtext">Contact</span></a>')}</script>
     
     <!--[if IE 6 ]><body class="ie6 old_ie"><![endif]-->
     <!--[if IE 7 ]><body class="ie7 old_ie"><![endif]-->
     <!--[if IE 8 ]><body class="ie8"><![endif]-->
     <!--[if IE 9 ]><body class="ie9"><![endif]-->
     <!--[if&nbsp;!IE]><!--><body><!--<![endif]-->
+		<div class="header">
+			<a href="index.html" id="cuckoolandImage"><img src="images/CloudCuckooLand.svg" alt="In Cloud Cuckoo Land" /></a>
+		</div>
+		
+		<div id="navbar">
+			<a href="index.html"><i class="fa-solid fa-house"></i> <span class="navtext">Accueil</span></a> 
+			<a href="IlEtaitUneFoisLaRévolutionG1.html"><i class="fa-solid fa-backward-step"></i> <span class="navtext">Il était une fois la révolution Ğ1</span></a> 
+			<a href="reveal/LaMonnaieLibreEnUnCinquiemeDeTemps.html"><i class="fa-solid fa-forward-step"></i> <span class="navtext">La monnaie libre en un cinquieme de temps</span></a> 
+			<div class="navbar-right">
+				<script type="text/javascript">contact("cuckooland","free.fr");</script> 
+				<a href="https://mamot.fr/@cuckooland"><i class="fab fa-mastodon"></i> <span class="navtext">Mastodon</span></a> 
+			</div>
+		</div>
+
         <div id="bloc_page">
-            <div id="header">
-                <div id="headerTitle">
-					<a href="index.html" id="cuckoolandImage"><img src="images/CloudCuckooLand.png" alt="In Cloud Cuckoo Land" /></a>
-                </div>
-                
-                <div id="nav">
-                    <ul>
-                        <li><a href="IlEtaitUneFoisLaRévolutionG1.html">Il était une fois la révolution Ğ1</a></li>
-						<li><a href="index.html">Accueil</a></li>
-						<li><a href="reveal/LaMonnaieLibreEnUnCinquiemeDeTemps.html">La monnaie libre en un cinquieme de temps</a></li>
-                        <li><script type="text/javascript">contact("cuckooland","free.fr");</script></li>
-                    </ul>
-                </div>
-            </div>
-			
             <div id="section">
 
                 <div id="article">
@@ -178,5 +178,21 @@
             build_YB_FR_IDF();
             build_YB_FR_REG();
         </script>
+
+		<script>
+			window.onscroll = function() {myFunction()};
+
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+		</script>
+
     </body>
 </html>

@@ -2,7 +2,7 @@
 <html>
 	<head>
         <meta charset="utf-8" />
-        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="title" content="Le virus Ğ1">
 		<meta name="description" content="Il y a quelques années, alors que j&rsquo;essayais péniblement de concevoir «&nbsp;La TRM en couleur&nbsp;», des informaticiens écrivaient une implémentation de monnaie libre, qui plus tard donnerait la Ğ1. Je les imaginais comme des hackers mettant au point un virus." />
 		<meta name="keywords" content="prolifération, virus, monnaie libre, logiciel libre, Ğ1" />
@@ -23,6 +23,7 @@
         <meta property="twitter:title" content="Le virus Ğ1" />
         <meta property="twitter:image" content="https://cuckooland.fr/og-images/VirusG1.png" />
         
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="css/index-style.css" />
         <!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -37,24 +38,23 @@
     <!--[if IE 9 ]><body class="ie9"><![endif]-->
     <!--[if !IE]><!--><body><!--<![endif]-->
     
-        <script type="text/javascript">function contact(t,c){document.write('<a class="contact" href=mailto:'+t+"@"+c+">Contact</a>")}</script>
+        <script type="text/javascript">function contact(t,c){document.write('<a class="contact" href=mailto:'+t+"@"+c+'><i class="far fa-envelope"></i> <span class="navtext">Contact</span></a>')}</script>
     
+		<div class="header">
+			<a href="index.html" id="cuckoolandImage"><img src="images/CloudCuckooLand.svg" alt="In Cloud Cuckoo Land" /></a>
+		</div>
+		
+		<div id="navbar">
+			<a href="index.html"><i class="fa-solid fa-house"></i> <span class="navtext">Accueil</span></a> 
+			<a href="LaTrmEnTransition.html"><i class="fa-solid fa-backward-step"></i> <span class="navtext">La TRM en transition</span></a> 
+			<a href="ICE-RBI-HistoireCochonne.html"><i class="fa-solid fa-forward-step"></i> <span class="navtext">ICE-RBI et histoire cochonne</span></a> 
+			<div class="navbar-right">
+				<script type="text/javascript">contact("cuckooland","free.fr");</script> 
+				<a href="https://mamot.fr/@cuckooland"><i class="fab fa-mastodon"></i> <span class="navtext">Mastodon</span></a> 
+			</div>
+		</div>
+
         <div id="bloc_page">
-            <div id="header">
-                <div id="headerTitle">
-					<a href="index.html" id="cuckoolandImage"><img src="images/CloudCuckooLand.png" alt="In Cloud Cuckoo Land" /></a>
-                </div>
-                
-                <div id="nav">
-                    <ul>
-                        <li><a href="LaTrmEnTransition.html">La TRM en transition</a></li>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="ICE-RBI-HistoireCochonne.html">ICE-RBI et histoire cochonne</a></li>
-                        <li><script type="text/javascript">contact("cuckooland","free.fr");</script></li>
-                    </ul>
-                </div>
-            </div>
-			
             <div id="section">
 
                 <div id="article">
@@ -151,5 +151,21 @@
 
             </div>
         </div>
+
+		<script>
+			window.onscroll = function() {myFunction()};
+
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+		</script>
+
     </body>
 </html>

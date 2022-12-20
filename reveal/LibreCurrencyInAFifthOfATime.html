@@ -26,6 +26,7 @@
 		<meta property="twitter:title" content="Libre Currency in a fifth of a time" />
 		<meta property="twitter:image" content="https://cuckooland.fr/og-images/AndItWasIt.png" />
 		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="../css/index-style.css" />
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/cuckooland.css">
@@ -41,7 +42,7 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
-        <script type="text/javascript">function contact(t,c){document.write('<a class="contact" href=mailto:'+t+"@"+c+">Contact</a>")}</script>
+        <script type="text/javascript">function contact(t,c){document.write('<a class="contact" href=mailto:'+t+"@"+c+'><i class="far fa-envelope"></i> <span class="navtext">Contact</span></a>')}</script>
 		<style>
 			.bouncy {
 				position: relative;
@@ -59,18 +60,18 @@
 		</style>		
 	</head>
 	<body>
-		<div style="position:relative;">
-			<div id="header" style="position:absolute;">
-				<div id="headerTitle">
-					<a href="../index.html" id="cuckoolandImage"><img src="../images/CloudCuckooLand.png" alt="In Cloud Cuckoo Land" /></a>
-				</div>
-				
-				<div id="nav">
-					<ul>
-                        <li><a href="../ForYolandBressonModule.html">For 'Yoland Bresson' module</a></li>
-						<li><a href="../contents.html">Contents</a></li>
-						<li><script type="text/javascript">contact("cuckooland","free.fr");</script></li>
-					</ul>
+		<div style="position: relative;">
+			<div style="position: absolute; width: 100%; z-index: 3000;">
+				<!--div class="header">
+					<a href="index.html" id="cuckoolandImage"><img src="../images/CloudCuckooLand.svg" alt="In Cloud Cuckoo Land" /></a>
+				</div-->
+				<div id="navbar">
+					<a href="../contents.html"><i class="fa-solid fa-house"></i> <span class="navtext">Contents</span></a> 
+					<a href="../ForYolandBressonModule.html"><i class="fa-solid fa-backward-step"></i> <span class="navtext">For 'Yoland Bresson' module</span></a> 
+					<div class="navbar-right">
+						<script type="text/javascript">contact("cuckooland","free.fr");</script> 
+						<a href="https://mamot.fr/@cuckooland"><i class="fab fa-mastodon"></i> <span class="navtext">Mastodon</span></a> 
+					</div>
 				</div>
 			</div>
 		</div>
@@ -1243,5 +1244,21 @@
 				]
 			});
 		</script>
+
+		<script>
+			window.onscroll = function() {myFunction()};
+
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+		</script>
+
 	</body>
 </html>

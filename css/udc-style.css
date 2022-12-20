@@ -165,6 +165,7 @@ em
 .noBorderTable
 {
 	border: 0;
+    font-size: 0.9rem;
 }
 #udcTBodyPane
 {

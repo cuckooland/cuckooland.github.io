@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>La TRM en Transition — In Cloud Cuckoo Land</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="La TRM en Transition">
     <meta name="description" content="La TRM en Couleur se voulait une introduction à la Théorie Relative de la Monnaie. La TRM en Transition garde son souci d'accessibilité au plus grand nombre, tout en abordant des questions plus avancées." />
     <meta name="keywords" content="Monnaie Libre, Revenu de base, Dividende Universel, Théorie Relative de la Monnaie, TRM, Simulation" />
@@ -26,29 +27,29 @@
     <link rel="icon" href="images/favicon.ico" />
     
     <!-- stylesheets sources -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/index-style.css" />
     <link href="css/trmEnTransition.css" media="screen" rel="stylesheet" type="text/css">
 
 </head>
 <body>
-    <script type="text/javascript">function contact(t,c){document.write('<a class="contact" href=mailto:'+t+"@"+c+">Contact</a>")}</script>
+    <script type="text/javascript">function contact(t,c){document.write('<a class="contact" href=mailto:'+t+"@"+c+'><i class="far fa-envelope"></i> <span class="navtext">Contact</span></a>')}</script>
+
+    <div class="header">
+        <a href="index.html" id="cuckoolandImage"><img src="images/CloudCuckooLand.svg" alt="In Cloud Cuckoo Land" /></a>
+    </div>
+    
+    <div id="navbar">
+        <a href="index.html"><i class="fa-solid fa-house"></i> <span class="navtext">Accueil</span></a> 
+        <a href="reveal/LaMonnaieLibreEnUnCinquiemeDeTemps.html"><i class="fa-solid fa-backward-step"></i> <span class="navtext">La monnaie libre en un cinquieme de temps</span></a> 
+        <a href="LeVirusG1.html"><i class="fa-solid fa-forward-step"></i> <span class="navtext">Le virus Ğ1</span></a> 
+        <div class="navbar-right">
+            <script type="text/javascript">contact("cuckooland","free.fr");</script> 
+            <a href="https://mamot.fr/@cuckooland"><i class="fab fa-mastodon"></i> <span class="navtext">Mastodon</span></a> 
+        </div>
+    </div>
 
     <div id="bloc_page">
-        <div id="header">
-            <div id="headerTitle">
-                <a href="index.html" id="cuckoolandImage"><img src="images/CloudCuckooLand.png" alt="In Cloud Cuckoo Land" /></a>
-            </div>
-            
-            <div id="nav">
-                <ul>
-                    <li><a href="reveal/LaMonnaieLibreEnUnCinquiemeDeTemps.html">La monnaie libre en un cinquieme de temps</a></li>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="LeVirusG1.html">Le virus Ğ1</a></li>
-                    <li><script type="text/javascript">contact("cuckooland","free.fr");</script></li>
-                </ul>
-            </div>
-        </div>
-        
         <div id="section">
 			<h1>La TRM en Transition <span class="pub-date">05/2019</span>
 			</h1>
@@ -1327,6 +1328,22 @@
     <script type="application/javascript" src="js/trmEnTransition/trm.js"></script>
     <script type="application/javascript" src="js/trmEnTransition/configurations.js"></script>
     <script type="application/javascript" src="js/trmEnTransition/trmEnTransition.js"></script>
+
+
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 
 </body>
 </html>

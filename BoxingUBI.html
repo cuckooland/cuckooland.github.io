@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="title" content="Boxing Universal Basic Income">
 	<meta name="description" content="To deconstruct the question of financing the Basic Income, here is a presentation based on animated diagrams." />
 	<meta name="keywords" content="Libre Currency, Universal Basic Income, RTM, financing, authoritarianism" />
@@ -25,6 +25,7 @@
 	<meta property="twitter:title" content="Boxing Universal Basic Income" />
 	<meta property="twitter:image" content="https://cuckooland.fr/og-images/BoxingUBI_DU.png" />
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/MiseEnBoiteDuRdB.css" />
     <link rel="stylesheet" type="text/css" href="css/index-style.css" />
 
@@ -37,24 +38,23 @@
 	<!--[if IE 9 ]><body class="ie9"><![endif]-->
 	<!--[if !IE]><!--><body><!--<![endif]-->
 	
-        <script type="text/javascript">function contact(t,c){document.write('<a class="contact" href=mailto:'+t+"@"+c+">Contact</a>")}</script>
+        <script type="text/javascript">function contact(t,c){document.write('<a class="contact" href=mailto:'+t+"@"+c+'><i class="far fa-envelope"></i> <span class="navtext">Contact</span></a>')}</script>
 
-		<div id="bloc_page">
-			<div id="header">
-				<div id="headerTitle">
-					<a href="index.html" id="cuckoolandImage"><img src="images/CloudCuckooLand.png" alt="In Cloud Cuckoo Land" /></a>
-				</div>
-				
-                <div id="nav">
-					<ul>
-                        <li><a href="TheRtmForTheKids.html">The RTM for the kids</a></li>
-                        <li><a href="contents.html">Contents</a></li>
-                        <li><a href="ForYolandBressonModule.html">For 'Yoland Bresson' module</a></li>
-						<li><script type="text/javascript">contact("cuckooland","free.fr");</script></li>
-					</ul>
-				</div>
+		<div class="header">
+			<a href="index.html" id="cuckoolandImage"><img src="images/CloudCuckooLand.svg" alt="In Cloud Cuckoo Land" /></a>
+		</div>
+		
+		<div id="navbar">
+			<a href="contents.html"><i class="fa-solid fa-house"></i> <span class="navtext">Contents</span></a> 
+			<a href="TheRtmForTheKids.html"><i class="fa-solid fa-backward-step"></i> <span class="navtext">The RTM for the kids</span></a> 
+			<a href="ForYolandBressonModule.html"><i class="fa-solid fa-forward-step"></i> <span class="navtext">For 'Yoland Bresson' module</span></a> 
+			<div class="navbar-right">
+				<script type="text/javascript">contact("cuckooland","free.fr");</script> 
+				<a href="https://mamot.fr/@cuckooland"><i class="fab fa-mastodon"></i> <span class="navtext">Mastodon</span></a> 
 			</div>
-			
+		</div>
+
+        <div id="bloc_page">
 			<div id="section">
   
               <div id="article">
@@ -575,6 +575,21 @@
         <script src="js/d3.v3.min.js" charset="utf-8"></script>
         <script src="js/sankey-no-sort.js"></script>
         <script type="text/javascript" src="js/BoxingUBI.js"></script>
+
+		<script>
+			window.onscroll = function() {myFunction()};
+
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+		</script>
 
     </body>
 </html>

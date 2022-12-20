@@ -2,7 +2,8 @@
 <html lang="en">
 	<head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="css/index-style.css" />
 		
 		<meta name="keywords" content="Libre Currency, Universal Basic Income, Universal Dividend, Relative Theory of Money, RTM" />
@@ -17,24 +18,20 @@
     <!--[if IE 9 ]><body class="ie9"><![endif]-->
     <!--[if !IE]><!--><body><!--<![endif]-->
     
-        <script type="text/javascript">function contact(t,c){document.write('<a class="contact" href=mailto:'+t+"@"+c+">Contact</a>")}</script>
+        <script type="text/javascript">function contact(t,c){document.write('<a class="contact" href=mailto:'+t+"@"+c+'><i class="far fa-envelope"></i> <span class="navtext">Contact</span></a>')}</script>
     
+		<div class="header">
+			<a href="index.html" id="cuckoolandImage"><img src="images/CloudCuckooLand.svg" alt="In Cloud Cuckoo Land" /></a>
+		</div>
+		
+		<div id="navbar">
+			<div class="navbar-right">
+				<script type="text/javascript">contact("cuckooland","free.fr");</script> 
+				<a href="https://mamot.fr/@cuckooland"><i class="fab fa-mastodon"></i> <span class="navtext">Mastodon</span></a> 
+			</div>
+		</div>
+
         <div id="bloc_page">
-            <div id="header">
-                <div id="headerTitle">
-					<a href="index.html" id="cuckoolandImage"><img src="images/CloudCuckooLand.png" alt="In Cloud Cuckoo Land" /></a>
-                </div>
-                
-                <div id="nav">
-                    <ul>
-						<li id="cc-licence">
-							published under <a href="LICENSE">GNU GPL v3.0</a>
-						</li>
-                        <li><script type="text/javascript">contact("cuckooland","free.fr");</script></li>
-                    </ul>
-                </div>
-            </div>
-			
             <div id="section">
 				<div class="preview">
 					<a href="reveal/LibreCurrencyInAFifthOfATime.html">
@@ -78,5 +75,21 @@
 			
             </div>
         </div>
+
+		<script>
+			window.onscroll = function() {myFunction()};
+
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+		</script>
+
     </body>
 </html>

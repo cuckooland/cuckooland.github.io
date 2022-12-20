@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 	<head>
         <meta charset="utf-8" />
-        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="title" content="Bouée de Base contre Mollets Libres">
 		<meta name="description" content="Un Poissaï doit vivre avec des boulets aux pieds pour ne pas se laisser aller à l'oisiveté. Ainsi, toute sa vie, il devra se démener pour ne pas couler." />
 		<meta name="keywords" content="Monnaie Libre, Revenu de Base, TRM, financement, imposture" />
@@ -23,6 +23,7 @@
 		<meta property="twitter:title" content="Bouée de Base contre Mollets Libres" />
 		<meta property="twitter:image" content="https://cuckooland.fr/og-images/Photo-BielMorro.jpeg" />
 				
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="css/index-style.css" />
         <!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -36,24 +37,23 @@
     <!--[if IE 8 ]><body class="ie8"><![endif]-->
     <!--[if IE 9 ]><body class="ie9"><![endif]-->
     <!--[if&nbsp;!IE]><!--><body><!--<![endif]-->
-	    <script type="text/javascript">function contact(t,c){document.write('<a class="contact" href=mailto:'+t+"@"+c+">Contact</a>")}</script>
+        <script type="text/javascript">function contact(t,c){document.write('<a class="contact" href=mailto:'+t+"@"+c+'><i class="far fa-envelope"></i> <span class="navtext">Contact</span></a>')}</script>
     
+		<div class="header">
+			<a href="index.html" id="cuckoolandImage"><img src="images/CloudCuckooLand.svg" alt="In Cloud Cuckoo Land" /></a>
+		</div>
+		
+		<div id="navbar">
+			<a href="index.html"><i class="fa-solid fa-house"></i> <span class="navtext">Accueil</span></a> 
+			<a href="MiseEnBoiteDuRdB.html"><i class="fa-solid fa-backward-step"></i> <span class="navtext">Mise en boîte du Revenu de Base</span></a> 
+			<a href="IlEtaitUneFoisLaRévolutionG1.html"><i class="fa-solid fa-forward-step"></i> <span class="navtext">Il était une fois la révolution Ğ1</span></a> 
+			<div class="navbar-right">
+				<script type="text/javascript">contact("cuckooland","free.fr");</script> 
+				<a href="https://mamot.fr/@cuckooland"><i class="fab fa-mastodon"></i> <span class="navtext">Mastodon</span></a> 
+			</div>
+		</div>
+
         <div id="bloc_page">
-            <div id="header">
-                <div id="headerTitle">
-					<a href="index.html" id="cuckoolandImage"><img src="images/CloudCuckooLand.png" alt="In Cloud Cuckoo Land" /></a>
-                </div>
-                
-                <div id="nav">
-                    <ul>
-                        <li><a href="MiseEnBoiteDuRdB.html">Mise en boîte du Revenu de Base</a></li>
-						<li><a href="index.html">Accueil</a></li>
-                        <li><a href="IlEtaitUneFoisLaRévolutionG1.html">Il était une fois la révolution Ğ1</a></li>
-                        <li><script type="text/javascript">contact("cuckooland","free.fr");</script></li>
-                    </ul>
-                </div>
-            </div>
-			
             <div id="section">
 
                 <div id="article">
@@ -99,5 +99,21 @@
                 </div>				
             </div>
         </div>
+
+		<script>
+			window.onscroll = function() {myFunction()};
+
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+		</script>
+
     </body>
 </html>
