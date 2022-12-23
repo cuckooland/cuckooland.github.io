@@ -157,7 +157,10 @@ h1 {
     padding: 0.1rem 0.1rem 0.1rem 1rem;
     margin-top: 2rem;
 }
-#footnotes h1 {
+#footnotes h2 {
+	color: #A07009;
+	margin-top: 1rem;
+	margin-bottom: 0.8rem;
     font-style: italic;
     font-size: 1.5rem;
 }
