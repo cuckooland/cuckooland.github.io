@@ -65,7 +65,7 @@ body {
 
 #navbar {
   overflow: hidden;
-  background-color: #0084ff;
+  background-color: #0080ff;
   z-index: 3000; /* Utile avec Reveal.js */
 }
 
