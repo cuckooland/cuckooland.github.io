@@ -9,7 +9,7 @@
 }
 .guide
 {
-    font-size: 0.5em;
+    font-size: 1rem;
     font-style: normal;
     font-weight: normal;
 	color: #181818;
@@ -166,6 +166,7 @@ em
 {
 	border: 0;
     font-size: 0.9rem;
+    margin-top: 1rem;
 }
 #udcTBodyPane
 {
