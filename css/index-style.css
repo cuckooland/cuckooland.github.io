@@ -53,13 +53,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.header {
+div.header {
   background: #0084ff;
   padding: 0.5rem;
   z-index: 3000; /* Utile avec Reveal.js */
 }
 
-.header img {
+div.header img {
   max-width: 500px;
 }
 
