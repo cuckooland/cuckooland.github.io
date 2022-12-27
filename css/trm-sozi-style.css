@@ -15,6 +15,11 @@
     font-style: italic;
 }
 
+li
+{
+    margin-bottom: 0.5rem;
+}
+
 
 table.versions {
     border: 1px solid #ccc;
