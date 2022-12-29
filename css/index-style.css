@@ -186,20 +186,6 @@ p.imageCaption {
 #article p.imageCaption {
 	width: auto;
 }
-.twoImagesTable {
-    width: 100%;
-    text-align: left;
-    table-layout: fixed;
-}
-.twoImagesTable td {
-	text-align: center;
-	padding-left: 1rem;
-	padding-right: 1rem;
-}
-.twoImagesTable .articleImage {
-	max-width: 100%;
-	height: auto;
-}
 .introduction {
 	font-weight: bold;
     margin-bottom: 2rem;
