@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /*.xcf$
+Disallow: /*.skp$
+Disallow: /*.zip$
+Disallow: /og-images/
+Disallow: /sliderData/thumbnails/
+Disallow: /sliderData/tooltips/
+Disallow: /sliderEngine/
+Disallow: /data/
