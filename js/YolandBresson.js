@@ -186,7 +186,7 @@ function build_YB(config) {
                     var refMapChart = d3.select('.map.' + config.class + '.' + refSelectId + '.' + dateSelectId);
                     var mapId = refMapChart.attr('id');
 
-                    var mapChartWidth = 450, mapChartHeight = 386;
+                    var mapChartWidth = 460, mapChartHeight = 386;
                     var colorScaleAxisId = mapId + 'ColorScaleAxis';
 
                     // Create a path object to manipulate geo data
@@ -202,8 +202,8 @@ function build_YB(config) {
 
                     // Create the DIV that will contain our map
                     var svg = d3.select('#' + mapId).append("svg")
-                        .attr("width", mapChartWidth)
-                        .attr("height", mapChartHeight)
+                        .attr("viewBox", `0 0 ${mapChartWidth} ${mapChartHeight}`)
+                        .attr("preserveAspectRatio", "xMinYMin meet")
                         .attr("class", "Blues");
 
                     // Append the group that will contain our paths
@@ -249,6 +249,7 @@ function build_YB(config) {
                         svg.append("g")
                             .attr("id", colorScaleAxisId)
                             .attr('transform', 'translate(410, 30)')
+                            .attr("class", "axis")
                             .call(colorScaleAxis)
                             .append("text")
                             .attr("fill", "#000")
@@ -365,9 +366,9 @@ function build_YB(config) {
                     // Create the svg that will contain our chart
                     var lineChart = d3.select('#' + chartId);
                     var svg = lineChart.append("svg")
-                        .attr("width", lineChartWidth + margin.left + margin.right)
-                        .attr("height", chartsHeight + margin.top + margin.bottom);
-                    var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+                        .attr("viewBox", `0 0 ${lineChartWidth + margin.left + margin.right} ${chartsHeight + margin.top + margin.bottom}`)
+                        .attr("preserveAspectRatio", "xMinYMin meet");
+                        var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
                     // Set the ranges
                     var x = d3.scaleTime().rangeRound([0, lineChartWidth]);
@@ -386,6 +387,7 @@ function build_YB(config) {
 
                     // Add the X Axis
                     g.append("g")
+                        .attr("class", "x axis")
                         .attr("transform", "translate(0," + chartsHeight + ")")
                         .call(d3.axisBottom(x));
 

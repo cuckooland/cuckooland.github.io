@@ -1,22 +1,23 @@
 #section
 {
-    width: 950px;
+    width: 50rem;
     max-width: 100%;
     margin: auto;
 }
 
-.box.map {
-    width: 472px;
-    height: 386px;
-    display: inline-block;
-    vertical-align: middle;
+.chartsContainer {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.box.chart {
-    width: 450px;
-    height: 386px;
-    display: inline-block;
-    vertical-align: middle;
+.box {
+    width: 24rem;
+    height: auto;
+    margin: 0.4rem;
+}
+
+.box svg {
+    max-width: 400px;
 }
 
 .area {
@@ -44,13 +45,13 @@ div.tooltip {
     opacity:0.8;
     z-index:1000;
     text-align:left;
-    border-radius:4px;
-    padding:8px;
+    border-radius:0.4rem;
+    padding:0.8rem;
     color:#fff;
     background-color:#000;
-    font: 12px sans-serif;
-    max-width: 300px;
-    height: 40px;
+    font: 1rem sans-serif;
+    max-width: 30rem;
+    height: 4rem;
     pointer-events: none;
 }
 
@@ -59,12 +60,14 @@ div.tooltip {
     margin: auto;
 }
 
+.axis { font: 14px sans-serif; }
+
 .date_player {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 .dateLabel {
-    font: 15px "Helvetica Neue";
+    font: 1,5rem "Helvetica Neue";
     fill: #000055;
 }
 
@@ -101,18 +104,17 @@ div.tooltip {
 }
 
 .legend {
-    margin-left:40px;
+    margin-left:4rem;
 }
 
 .legendItem {
     float:left;
-    margin-right:1em;
-    font: 0.7em "Helvetica Neue";
+    margin-right:1rem;
+    font: 0.8rem "Helvetica Neue";
     cursor: default;
 }
 
 .csvContent {
-    margin-left:10px;
-    margin-top:10px;
-    margin-bottom:10px;
+    width: 100%;
+    margin: 0.4rem;
 }
