@@ -137,6 +137,9 @@ h1 {
 #article {
     margin-bottom: 0.5rem;
 }
+figure {
+    margin: 0rem 0rem 0rem 0rem;
+} 
 .articleImage {
     -moz-box-shadow: 0.4rem 0.4rem 0.4rem #1c1a19;
     -webkit-box-shadow: 0.4rem 0.4rem 0.4rem #1c1a19;
@@ -176,14 +179,14 @@ h1 {
 	font-size: 0.8rem;
     vertical-align: top;
 }
-p.imageCaption {
+.imageCaption {
 	color: #777;
 	font-size:1rem;
 	text-align:center;
     margin: auto;
     margin-bottom: 3rem;
 }
-#article p.imageCaption {
+#article .imageCaption {
 	width: auto;
 }
 .introduction {
